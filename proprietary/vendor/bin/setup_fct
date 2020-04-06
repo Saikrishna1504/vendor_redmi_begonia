@@ -1,0 +1,7 @@
+AudioSetParam AURISYS_SET_PARAM,DSP,PLAYBACK_SMARTPA,SMARTPATFA,PARAM_FILE,/vendor/etc/audio_param/nxp_bypass_algo/=SET
+
+tinymix  "Headset_PGAL_GAIN"   8
+tinymix  "Headset_PGAR_GAIN"   8
+tinymix  "Handset_PGA_GAIN"    0
+tinymix  "Audio_PGA1_Setting"  3
+tinymix  "Audio_PGA2_Setting"  3
