@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service \
     vendor/redmi/begonia/proprietary/vendor/bin/hw/android.hardware.gnss@2.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.0-service-mediatek \
     vendor/redmi/begonia/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service \
-    vendor/redmi/begonia/proprietary/vendor/bin/hw/android.hardware.light@2.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.light@2.0-service-mediatek \
     vendor/redmi/begonia/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.1-service-gpunn \
     vendor/redmi/begonia/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.1-service-neuron-ann:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.1-service-neuron-ann \
     vendor/redmi/begonia/proprietary/vendor/bin/hw/android.hardware.sensors@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@1.0-service-mediatek \
@@ -330,8 +329,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/ecc_list_OP20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP20.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
-    vendor/redmi/begonia/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
-    vendor/redmi/begonia/proprietary/vendor/etc/fstab.mt6785:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6785 \
     vendor/redmi/begonia/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/redmi/begonia/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/aee_aedv64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64.rc \
@@ -344,7 +341,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.gnss@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.0-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.light@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.light@2.0-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.1-service-gpunn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.1-service-gpunn.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.1-service-neuron-ann.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.1-service-neuron-ann.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service-mediatek.rc \
@@ -928,7 +924,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@2.0-impl-2.1.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl.so \
-    vendor/redmi/begonia/proprietary/vendor/lib/hw/android.hardware.light@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.light@2.0-impl-mediatek.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/android.hardware.power@1.3-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.power@1.3-impl-mediatek.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/android.hardware.vibrator@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.vibrator@1.0-impl.so \
@@ -953,7 +948,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/kmsetkey.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.default.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/kmsetkey.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.mt6785.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
-    vendor/redmi/begonia/proprietary/vendor/lib/hw/lights.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.mt6785.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/memtrack.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt6785.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/redmi/begonia/proprietary/vendor/lib/hw/power.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt6785.so \
@@ -1572,7 +1566,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib64/hw/android.hardware.gnss@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.0-impl-mediatek.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@2.0-impl-2.1.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl.so \
-    vendor/redmi/begonia/proprietary/vendor/lib64/hw/android.hardware.light@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.light@2.0-impl-mediatek.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/hw/android.hardware.power@1.3-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.power@1.3-impl-mediatek.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@1.0-impl-mediatek.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.2-impl.so \
