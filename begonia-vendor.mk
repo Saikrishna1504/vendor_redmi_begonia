@@ -22,6 +22,11 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml:system/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml \
     vendor/redmi/begonia/proprietary/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml:system/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml \
     vendor/redmi/begonia/proprietary/etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml:system/etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml \
+    vendor/redmi/begonia/proprietary/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar \
+    vendor/redmi/begonia/proprietary/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar \
+    vendor/redmi/begonia/proprietary/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar \
+    vendor/redmi/begonia/proprietary/framework/mediatek-ims-legacy.jar:system/framework/mediatek-ims-legacy.jar \
+    vendor/redmi/begonia/proprietary/framework/mediatek-ims-wwop-common.jar:system/framework/mediatek-ims-wwop-common.jar \
     vendor/redmi/begonia/proprietary/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar:system/framework/vendor.xiaomi.hardware.misys-V1.0-java.jar \
     vendor/redmi/begonia/proprietary/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar:system/framework/vendor.xiaomi.hardware.misys-V2.0-java.jar \
     vendor/redmi/begonia/proprietary/framework/vendor.xiaomi.hardware.misys.V3_0.jar:system/framework/vendor.xiaomi.hardware.misys.V3_0.jar \
