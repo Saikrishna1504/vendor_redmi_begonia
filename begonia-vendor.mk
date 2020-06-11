@@ -22,8 +22,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml:system/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.0-java-permission.xml \
     vendor/redmi/begonia/proprietary/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml:system/etc/permissions/vendor.xiaomi.hardware.mtdservice-V1.1-java-permission.xml \
     vendor/redmi/begonia/proprietary/etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml:system/etc/permissions/vendor.xiaomi.hardware.vsimapp-V1.0-java-permission.xml \
-    vendor/redmi/begonia/proprietary/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar \
-    vendor/redmi/begonia/proprietary/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar \
     vendor/redmi/begonia/proprietary/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar \
     vendor/redmi/begonia/proprietary/framework/mediatek-ims-legacy.jar:system/framework/mediatek-ims-legacy.jar \
     vendor/redmi/begonia/proprietary/framework/mediatek-ims-wwop-common.jar:system/framework/mediatek-ims-wwop-common.jar \
@@ -33,6 +31,15 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/framework/vendor.xiaomi.hardware.mtdservice-V1.0-java.jar:system/framework/vendor.xiaomi.hardware.mtdservice-V1.0-java.jar \
     vendor/redmi/begonia/proprietary/framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar:system/framework/vendor.xiaomi.hardware.mtdservice-V1.1-java.jar \
     vendor/redmi/begonia/proprietary/framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar:system/framework/vendor.xiaomi.hardware.vsimapp-V1.0-java.jar \
+    vendor/redmi/begonia/proprietary/lib/libmtk_vt_service.so:system/lib/libmtk_vt_service.so \
+    vendor/redmi/begonia/proprietary/lib/libmtk_vt_wrapper.so:system/lib/libmtk_vt_wrapper.so \
+    vendor/redmi/begonia/proprietary/lib/libmtkaudio_utils.so:system/lib/libmtkaudio_utils.so \
+    vendor/redmi/begonia/proprietary/lib/libmtkavenhancements.so:system/lib/libmtkavenhancements.so \
+    vendor/redmi/begonia/proprietary/lib/libmtklimiter.so:system/lib/libmtklimiter.so \
+    vendor/redmi/begonia/proprietary/lib/libmtkperf_client.so:system/lib/libmtkperf_client.so \
+    vendor/redmi/begonia/proprietary/lib/libmtkshifter.so:system/lib/libmtkshifter.so \
+    vendor/redmi/begonia/proprietary/lib/libvcodec_cap.so:system/lib/libvcodec_cap.so \
+    vendor/redmi/begonia/proprietary/lib/libvcodec_capenc.so:system/lib/libvcodec_capenc.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so:system/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so:system/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
@@ -40,6 +47,15 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.misys@2.0.so:system/lib/vendor.xiaomi.hardware.misys@2.0.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.misys@3.0.so:system/lib/vendor.xiaomi.hardware.misys@3.0.so \
     vendor/redmi/begonia/proprietary/lib/vendor.xiaomi.hardware.touchfeature@1.0.so:system/lib/vendor.xiaomi.hardware.touchfeature@1.0.so \
+    vendor/redmi/begonia/proprietary/lib64/libmtk_serialnum.so:system/lib64/libmtk_serialnum.so \
+    vendor/redmi/begonia/proprietary/lib64/libmtk_vt_wrapper.so:system/lib64/libmtk_vt_wrapper.so \
+    vendor/redmi/begonia/proprietary/lib64/libmtkaudio_utils.so:system/lib64/libmtkaudio_utils.so \
+    vendor/redmi/begonia/proprietary/lib64/libmtkavenhancements.so:system/lib64/libmtkavenhancements.so \
+    vendor/redmi/begonia/proprietary/lib64/libmtklimiter.so:system/lib64/libmtklimiter.so \
+    vendor/redmi/begonia/proprietary/lib64/libmtkperf_client.so:system/lib64/libmtkperf_client.so \
+    vendor/redmi/begonia/proprietary/lib64/libmtkshifter.so:system/lib64/libmtkshifter.so \
+    vendor/redmi/begonia/proprietary/lib64/libvcodec_cap.so:system/lib64/libvcodec_cap.so \
+    vendor/redmi/begonia/proprietary/lib64/libvcodec_capenc.so:system/lib64/libvcodec_capenc.so \
     vendor/redmi/begonia/proprietary/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so:system/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so \
     vendor/redmi/begonia/proprietary/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so:system/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/redmi/begonia/proprietary/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
@@ -2314,7 +2330,14 @@ PRODUCT_PACKAGES += \
     ImsService \
     SoterService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
-    HotwordEnrollmentXGoogleCORTEXM4
+    HotwordEnrollmentXGoogleCORTEXM4 \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/redmi/begonia
