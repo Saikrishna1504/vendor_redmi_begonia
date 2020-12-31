@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 The Potato Open Sauce Project
+# Copyright (C) 2019-2021 The Potato Open Sauce Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,55 +17,5 @@
 LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter begonia,$(TARGET_DEVICE)),)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ImsService
-LOCAL_MODULE_OWNER := redmi
-LOCAL_SRC_FILES := proprietary/priv-app/ImsService/ImsService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SoterService
-LOCAL_MODULE_OWNER := redmi
-LOCAL_SRC_FILES := proprietary/vendor/app/SoterService/SoterService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentOKGoogleCORTEXM4
-LOCAL_MODULE_OWNER := redmi
-LOCAL_SRC_FILES := proprietary/product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_PRODUCT_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollmentXGoogleCORTEXM4
-LOCAL_MODULE_OWNER := redmi
-LOCAL_SRC_FILES := proprietary/product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_PRODUCT_MODULE := true
-include $(BUILD_PREBUILT)
 
 endif
