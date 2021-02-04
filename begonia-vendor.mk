@@ -588,8 +588,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_spk_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_spk_game.bin \
     vendor/redmi/begonia/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
     vendor/redmi/begonia/proprietary/vendor/etc/pdc.txt:$(TARGET_COPY_OUT_VENDOR)/etc/pdc.txt \
-    vendor/redmi/begonia/proprietary/vendor/etc/permissions/android.hardware.microphone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.microphone.xml \
-    vendor/redmi/begonia/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/pm_test_item_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pm_test_item_config.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/power_whitelist_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_whitelist_cfg.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
