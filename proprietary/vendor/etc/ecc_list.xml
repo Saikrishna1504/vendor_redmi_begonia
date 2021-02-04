@@ -308,12 +308,10 @@
     <EccEntry Ecc="1669" Category="2" Condition="1" Plmn="520 04"/>
 
     <!-- xiaomi add being -->
-
-    <!-- Add for Greece operator -->
-    <EccEntry Ecc="100" Category="1" Condition="1" Plmn = "202 FFF" />
-    <EccEntry Ecc="166" Category="2" Condition="1" Plmn = "202 FFF" />
-    <EccEntry Ecc="199" Category="4" Condition="1" Plmn = "202 FFF" />
-
+     <!-- Add for Greece operator -->
+    <EccEntry Ecc="100" Category="1" Condition="2" Plmn = "202 FFF" />
+    <EccEntry Ecc="166" Category="2" Condition="2" Plmn = "202 FFF" />
+    <EccEntry Ecc="199" Category="4" Condition="2" Plmn = "202 FFF" />
     <!-- Add for Czech Republic operator -->
     <EccEntry Ecc="150" Category="0" Condition="0" Plmn = "230 FFF" />
     <EccEntry Ecc="155" Category="0" Condition="0" Plmn = "230 FFF" />

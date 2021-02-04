@@ -359,18 +359,20 @@
         </Package>
         <Package name="net.kishonti.gfxbench.gl.v40000.corporate">
             <Activity name="Common">
-                <PERF_RES_FPS_FBT_BHR_OPP Param1="15"/>
-                <PERF_RES_DRAM_OPP_MIN Param1="0"/>
+                <PERF_RES_POWERHAL_SPORTS_MODE Param1="1"/>
                 <PERF_RES_THERMAL_POLICY Param1="8"/>
-                <PERF_RES_SCHED_UCLAMP_MIN_TA  Param1="60"/>
             </Activity>
         </Package>
         <Package name="net.kishonti.gfxbench.v50000.corporate">
             <Activity name="Common">
-                <PERF_RES_FPS_FBT_BHR_OPP Param1="15"/>
-                <PERF_RES_DRAM_OPP_MIN Param1="0"/>
+                <PERF_RES_POWERHAL_SPORTS_MODE Param1="1"/>
                 <PERF_RES_THERMAL_POLICY Param1="8"/>
-                <PERF_RES_SCHED_UCLAMP_MIN_TA Param1="60"/>
+            </Activity>
+        </Package>
+        <Package name="com.glbenchmark.glbenchmark27">
+            <Activity name="Common">
+                <PERF_RES_POWERHAL_SPORTS_MODE Param1="1"/>
+                <PERF_RES_THERMAL_POLICY Param1="8"/>
             </Activity>
         </Package>
         <Package name="com.estrongs.android.pop.pro">

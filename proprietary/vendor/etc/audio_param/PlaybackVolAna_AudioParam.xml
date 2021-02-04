@@ -56,7 +56,7 @@
       <Param name="amp" value="0,0,0,0,0,0,0,0,0,0"/>
     </ParamUnit>
     <ParamUnit param_id="5">
-      <Param name="headset_pga" value="5"/>
+      <Param name="headset_pga" value="9"/>
       <Param name="speaker_pga" value="-1"/>
       <Param name="receiver_pga" value="-1"/>
       <Param name="amp" value="0,0,0,0,0,0,0,0,0,0"/>

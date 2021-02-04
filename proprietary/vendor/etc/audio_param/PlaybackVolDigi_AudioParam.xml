@@ -122,28 +122,20 @@
     <Param path="Accessibility,BT_A2DP_HP" param_id="0"/>
     <Param path="Accessibility,BT_A2DP_SPK" param_id="0"/>
     <Param path="Default,Music,USB" param_id="1"/>
-    <Param path="Default,Ring,USB" param_id="2"/>
-    <Param path="Default,System,USB" param_id="3"/>
-    <Param path="Default,Music,HS" param_id="4"/>
-    <Param path="Default,Music,SPK" param_id="5"/>
+    <Param path="Default,Music,HS" param_id="2"/>
+    <Param path="Default,Music,SPK" param_id="3"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
       <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
     </ParamUnit>
     <ParamUnit param_id="1">
-      <Param name="digital_gain" value="-64,-56,-50,-45,-40,-35,-31,-27,-24,-21,-18,-15,-12,-9,-6,-3"/>
+      <Param name="digital_gain" value="-64,-57,-54,-51,-48,-45,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15"/>
     </ParamUnit>
     <ParamUnit param_id="2">
-      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="3">
-      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
-    </ParamUnit>
-    <ParamUnit param_id="4">
       <Param name="digital_gain" value="-64,-58,-52,-46,-40,-35,-30,-26,-23,-20,-17,-13,-9,-6,-3,0"/>
     </ParamUnit>
-    <ParamUnit param_id="5">
+    <ParamUnit param_id="3">
       <Param name="digital_gain" value="-64,-48,-43,-39,-35,-32,-29,-26,-23,-20,-17,-13,-10,-7,-4,0"/>
     </ParamUnit>
   </ParamUnitPool>

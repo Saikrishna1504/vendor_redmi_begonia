@@ -503,6 +503,10 @@
             <description>后置双摄测试</description>
         </testitem>
         <testitem>
+            <id>0036</id>
+            <description>NFC测试</description>
+        </testitem>
+        <testitem>
             <id>0006</id>
             <description>GPS测试</description>
         </testitem>
