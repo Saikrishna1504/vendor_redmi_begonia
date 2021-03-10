@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/vendor/bin/sh
 # Copyright (c) 2009-2015, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -32,10 +32,10 @@ for i in $(seq 5); do
     if [ -f /sys/bus/platform/devices/ts_focal/panel_info/cg_color ]; then
 		color=`cat /sys/bus/platform/devices/ts_focal/panel_info/cg_color`
 		if [ -n "$color" ]; then
-		    /system/bin/log -p i -t panel-info-sh Get panel_color successfully from sys node $color
+		    /vendor/bin/log -p i -t panel-info-sh Get panel_color successfully from sys node $color
 		    break
 		else
-		    /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
+		    /vendor/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
 		    sleep 1
 		    continue
 		fi
@@ -43,16 +43,16 @@ for i in $(seq 5); do
     elif [ -f  /sys/bus/platform/devices/ts_novatek/panel_info/cg_color ]; then
         color=`cat /sys/bus/platform/devices/ts_novatek/panel_info/cg_color`
         if [ -n "$color" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_color successfully from sys node $color
+            /vendor/bin/log -p i -t panel-info-sh Get panel_color successfully from sys node $color
             break
         else
-            /system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
+            /vendor/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
             sleep 1
             continue
         fi
     else
 	color="0"
-	/system/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
+	/vendor/bin/log -p i -t panel-info-sh Get panel_color unsuccessfully, try again...
 	sleep 1
     fi
 done
@@ -62,10 +62,10 @@ for i in $(seq 5); do
     if [ -f  /sys/bus/platform/devices/ts_focal/panel_info/cg_maker ]; then
 	panel_vendor=`cat /sys/bus/platform/devices/ts_focal/panel_info/cg_maker`
 		if [ -n "$panel_vendor" ]; then
-		    /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from sys node $panel_vendor
+		    /vendor/bin/log -p i -t panel-info-sh Get panel_vendor successfully from sys node $panel_vendor
 		    break
 		else
-		    /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
+		    /vendor/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
 		    sleep 1
 		    continue
 		fi
@@ -73,16 +73,16 @@ for i in $(seq 5); do
     elif [ -f  /sys/bus/platform/devices/ts_novatek/panel_info/cg_maker ]; then
         panel_vendor=`cat /sys/bus/platform/devices/ts_novatek/panel_info/cg_maker`
         if [ -n "$panel_vendor" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_vendor successfully from sys node $panel_vendor
+            /vendor/bin/log -p i -t panel-info-sh Get panel_vendor successfully from sys node $panel_vendor
             break
         else
-            /system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
+            /vendor/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
             sleep 1
             continue
         fi
     else
 	panel_vendor="0"
-	/system/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
+	/vendor/bin/log -p i -t panel-info-sh Get panel_vendor unsuccessfully, try again...
 	sleep 1
     fi
 done
@@ -92,10 +92,10 @@ for i in $(seq 5); do
     if [ -f  /sys/bus/platform/devices/ts_focal/panel_info/display_maker ]; then
 		panel_display=`cat /sys/bus/platform/devices/ts_focal/panel_info/display_maker`
 		if [ -n "$panel_display" ]; then
-		    /system/bin/log -p i -t panel-info-sh Get panel_display successfully from sys node $panel_display
+		    /vendor/bin/log -p i -t panel-info-sh Get panel_display successfully from sys node $panel_display
 		    break
 		else
-		    /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
+		    /vendor/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
 		    sleep 1
 		    continue
 		fi
@@ -103,16 +103,16 @@ for i in $(seq 5); do
     elif [ -f  /sys/bus/platform/devices/ts_novatek/panel_info/display_maker ]; then
         panel_display=`cat /sys/bus/platform/devices/ts_novatek/panel_info/display_maker`
         if [ -n "$panel_display" ]; then
-            /system/bin/log -p i -t panel-info-sh Get panel_display successfully from sys node $panel_display
+            /vendor/bin/log -p i -t panel-info-sh Get panel_display successfully from sys node $panel_display
             break
         else
-            /system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
+            /vendor/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
             sleep 1
             continue
         fi
     else
 	panel_display=""
-	/system/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
+	/vendor/bin/log -p i -t panel-info-sh Get panel_display unsuccessfully, try again...
 	sleep 1
     fi
 done
