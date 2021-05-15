@@ -320,11 +320,6 @@
     <!-- Add for United Kingdom operator -->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "234 FFF" />
 
-    <!-- Add for Poland operator -->
-    <EccEntry Ecc="997" Category="1" Condition="1" Plmn = "260 FFF" />
-    <EccEntry Ecc="999" Category="2" Condition="1" Plmn = "260 FFF" />
-    <EccEntry Ecc="998" Category="4" Condition="1" Plmn = "260 FFF" />
-
     <!-- Add for United States operator -->
     <EccEntry Ecc="*911" Category="0" Condition="1" Plmn = "310 FFF" />
     <EccEntry Ecc="#911" Category="0" Condition="1" Plmn = "310 FFF" />
