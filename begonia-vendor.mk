@@ -1318,7 +1318,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysenv.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libteeclientjni@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni@1.1.so \
-    vendor/redmi/begonia/proprietary/vendor/lib/libtextclassifier_hash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtextclassifier_hash.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libtflite_mtk_static.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk_static.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
@@ -1990,7 +1989,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib64/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysenv.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libteeclientjni@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni@1.1.so \
-    vendor/redmi/begonia/proprietary/vendor/lib64/libtextclassifier_hash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtextclassifier_hash.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libtflite_mtk_static.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_mtk_static.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthha.so \
