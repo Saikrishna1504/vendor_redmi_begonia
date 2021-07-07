@@ -41,30 +41,6 @@ android_app_import {
 	soc_specific: true,
 }
 
-android_app_import {
-	name: "HotwordEnrollmentOKGoogleCORTEXM4",
-	owner: "redmi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleCORTEXM4",
-	owner: "redmi",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
 dex_import {
 	name: "mediatek-common",
 	owner: "redmi",
