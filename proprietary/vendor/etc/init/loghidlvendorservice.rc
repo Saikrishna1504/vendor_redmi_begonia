@@ -8,5 +8,9 @@ service loghidlvendorservice /vendor/bin/loghidlvendorservice
     
     class hal
     class main
+    user shell
+    group system
     disabled
 
+ on property:sys.boot_completed=1 && property:ro.boot.atm=enable
+   start loghidlvendorservice

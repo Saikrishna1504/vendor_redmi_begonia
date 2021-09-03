@@ -15,5 +15,6 @@ on boot
 
 service vendor.usb-hal-1-1 /vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
     class hal
-    user system
-    group system
+    user root
+    group root system shell mtp
+    capabilities

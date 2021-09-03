@@ -1,0 +1,10 @@
+on post-fs-data
+    mkdir /data/mdl 0775 system system
+    mkdir /data/debuglogger 0770 shell log
+
+service mdlogger /system/system_ext/bin/mdlogger
+    class main
+    user shell
+    group shell system radio sdcard_rw inet sdcard_r media_rw
+    disabled
+    oneshot
