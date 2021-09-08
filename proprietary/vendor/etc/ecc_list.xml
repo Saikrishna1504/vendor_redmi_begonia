@@ -336,13 +336,36 @@
     <EccEntry Ecc="100" Category="1" Condition="2" Plmn = "202 FFF" />
     <EccEntry Ecc="166" Category="2" Condition="2" Plmn = "202 FFF" />
     <EccEntry Ecc="199" Category="4" Condition="2" Plmn = "202 FFF" />
+
+    <!-- Add for Netherlands operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "204 FFF" />
+
+    <!-- Add for Spain operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "214 FFF" />
+
+    <!-- Add for Hungary operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "216 FFF" />
+
+    <!-- Add for Italy operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "222 FFF" />
+
     <!-- Add for Czech Republic operator -->
-    <EccEntry Ecc="150" Category="0" Condition="0" Plmn = "230 FFF" />
-    <EccEntry Ecc="155" Category="0" Condition="0" Plmn = "230 FFF" />
-    <EccEntry Ecc="158" Category="0" Condition="0" Plmn = "230 FFF" />
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "230 FFF" />
 
     <!-- Add for United Kingdom operator -->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "234 FFF" />
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "234 FFF" />
+    <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "234 FFF" />
+
+    <!-- Add for Germany operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "262 FFF" />
+
+    <!-- Add for Portugal operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "268 FFF" />
+
+    <!-- Add for Ireland operator -->
+    <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "272 FFF" />
+    <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "272 FFF" />
 
     <!-- Add for United States operator -->
     <EccEntry Ecc="*911" Category="0" Condition="1" Plmn = "310 FFF" />
@@ -409,6 +432,9 @@
     <EccEntry Ecc="118" Category="0" Condition="1" Plmn = "510 FFF" />
     <EccEntry Ecc="199" Category="0" Condition="1" Plmn = "510 FFF" />
     <EccEntry Ecc="113" Category="0" Condition="1" Plmn = "510 FFF" />
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn = "510 FFF" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "510 FFF" />
+    <EccEntry Ecc="129" Category="0" Condition="2" Plmn = "510 FFF" />
 
     <!-- Add for Philippines operator -->
     <EccEntry Ecc="117" Category="0" Condition="0" Plmn = "515 FFF" />

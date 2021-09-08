@@ -75,6 +75,6 @@
  <Param name="MTK_IIR_ENH_SUPPORT" value="yes" />
  <Param name="MTK_IIR_MIC_SUPPORT" value="no" />
  <Param name="MTK_FIR_IIR_ENH_SUPPORT" value="no" />
- <Param name="SPH_PARAM_SV" value="no" />
+ <Param name="SPH_PARAM_SV" value="yes" />
  <Param name="VIR_SCENE_CUSTOMIZATION_SUPPORT" value="yes" />
 </AudioParamOptions>
