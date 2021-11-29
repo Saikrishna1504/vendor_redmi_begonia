@@ -357,6 +357,9 @@
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "234 FFF" />
     <EccEntry Ecc="911" Category="0" Condition="1" Plmn = "234 FFF" />
 
+    <!-- Add for Norway operator -->
+    <EccEntry Ecc="113" Category="0" Condition="0" Plmn = "242 FFF" />
+
     <!-- Add for Germany operator -->
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "262 FFF" />
 
@@ -392,6 +395,11 @@
     <EccEntry Ecc="102" Category="0" Condition="0" Plmn = "429 FFF" />
     <EccEntry Ecc="108" Category="0" Condition="0" Plmn = "429 FFF" />
 
+    <!-- add for Iran operator (43211)-->
+    <EccEntry Ecc="110" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="115" Category="0" Condition="2" Plmn="432 FFF"/>
+    <EccEntry Ecc="125" Category="0" Condition="2" Plmn="432 FFF"/>
+
     <!-- Add for South Korea operator -->
     <EccEntry Ecc="111" Category="6" Condition="0" Plmn = "450 FFF" />
     <EccEntry Ecc="113" Category="3" Condition="0" Plmn = "450 FFF" />
@@ -412,9 +420,10 @@
     <EccEntry Ecc="193" Category="0" Condition="1" Plmn = "456 FFF" />
 
     <!-- Add for Laos operator -->
-    <EccEntry Ecc="191" Category="0" Condition="1" Plmn = "457 FFF" />
-    <EccEntry Ecc="192" Category="0" Condition="1" Plmn = "457 FFF" />
-    <EccEntry Ecc="193" Category="0" Condition="1" Plmn = "457 FFF" />
+    <EccEntry Ecc="1191" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1195" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1190" Category="0" Condition="2" Plmn = "457 FFF" />
+    <EccEntry Ecc="1199" Category="0" Condition="2" Plmn = "457 FFF" />
 
     <!-- Add for Bangladesh operator -->
     <EccEntry Ecc="100" Category="0" Condition="1" Plmn = "470 FFF" />

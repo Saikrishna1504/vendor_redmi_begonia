@@ -1344,6 +1344,15 @@
         roaming_protocol="IP"
     />
 
+   <apn carrier="IMS"
+      mcc="208"
+      mnc="15"
+      apn="ims"
+      type="ims"
+      protocol="IPV6"
+      roaming_protocol="IPV6"
+    />
+
     <apn carrier="Free MMS"
         mcc="208"
         mnc="15"
@@ -3919,6 +3928,17 @@
         mvno_match_data="0000000099"
         protocol="IP"
         roaming_protocol="IP"
+    />
+
+    <apn carrier="IMS"
+        mcc="222"
+        mnc="99"
+        apn="ims"
+        type="ims"
+        protocol="IP"
+        roaming_protocol="IP"
+        mvno_type="gid"
+        mvno_match_data="0000000099"
     />
 
     <apn carrier="Fastweb WEB"
@@ -39316,6 +39336,15 @@
         roaming_protocol="IP"
     />
 
+    <apn carrier="ims"
+        mcc="604"
+        mnc="00"
+        apn="ims"
+        type="ims"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+
     <apn carrier="Internet Mobile"
         mcc="604"
         mnc="01"
@@ -41152,8 +41181,8 @@
         mmsport="8080"
         mmsproxy="10.0.224.145"
         mmsc="http://mms"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="MMS"
@@ -41164,8 +41193,8 @@
         mmsport="8080"
         mmsproxy="10.0.224.145"
         type="mms"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="SFR option modem"
@@ -41173,8 +41202,8 @@
         mnc="10"
         apn="websfr"
         type="dun"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="Telecel"
@@ -43995,16 +44024,14 @@
         user=""
     />
 
-    <apn carrier="WAPTIGO"
+    <apn carrier="INTERNET TIGO"
         mcc="736"
         mnc="03"
-        apn="wap.tigo.bo"
+        apn="internet.tigo.bo"
         authtype="1"
-        password=""
-        port="8080"
-        proxy="172.25.100.8"
-        type="default,supl,dun"
-        user=""
+        type="default"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="MMS"
