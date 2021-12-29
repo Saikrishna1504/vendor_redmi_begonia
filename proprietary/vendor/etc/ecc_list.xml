@@ -352,6 +352,12 @@
     <!-- Add for Czech Republic operator -->
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "230 FFF" />
 
+    <!-- Add for Kazakhstan operator -->
+    <EccEntry Ecc="101" Category="0" Condition="2" Plmn="401 FFF"/>
+    <EccEntry Ecc="102" Category="0" Condition="2" Plmn="401 FFF"/>
+    <EccEntry Ecc="103" Category="0" Condition="2" Plmn="401 FFF"/>
+    <EccEntry Ecc="104" Category="0" Condition="2" Plmn="401 FFF"/>
+
     <!-- Add for United Kingdom operator -->
     <EccEntry Ecc="999" Category="0" Condition="1" Plmn = "234 FFF" />
     <EccEntry Ecc="112" Category="0" Condition="1" Plmn = "234 FFF" />
@@ -415,9 +421,8 @@
     <EccEntry Ecc="115" Category="0" Condition="0" Plmn = "452 FFF" />
 
     <!-- Add for Cambodia operator -->
-    <EccEntry Ecc="191" Category="0" Condition="1" Plmn = "456 FFF" />
-    <EccEntry Ecc="192" Category="0" Condition="1" Plmn = "456 FFF" />
-    <EccEntry Ecc="193" Category="0" Condition="1" Plmn = "456 FFF" />
+    <EccEntry Ecc="117" Category="0" Condition="2" Plmn = "456 FFF" />
+    <EccEntry Ecc="119" Category="0" Condition="2" Plmn = "456 FFF" />
 
     <!-- Add for Laos operator -->
     <EccEntry Ecc="1191" Category="0" Condition="2" Plmn = "457 FFF" />
