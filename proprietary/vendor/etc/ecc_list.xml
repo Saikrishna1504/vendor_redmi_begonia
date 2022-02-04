@@ -26,10 +26,6 @@
                 Ex: 460 FFF means all operators in China
     -->
 
-    <!-- Add for Myanmar due to AOSP eccdata will treat it as ecc -->
-    <EccEntry Ecc="191" Category="0" Condition="2" Plmn="414 FFF"/>
-    <EccEntry Ecc="192" Category="0" Condition="2" Plmn="414 FFF"/>
-    <EccEntry Ecc="199" Category="0" Condition="2" Plmn="414 FFF"/>
 
     <!-- Add for Japan KDDI operator -->
     <EccEntry Ecc="184110" Category="0" Condition="1" Plmn="440 07"/>
@@ -316,20 +312,11 @@
 
     <!-- Add for Thailand TrueMove operator (520 00/04) -->
     <EccEntry Ecc="112" Category="1" Condition="1" Plmn="520 00"/>
-    <EccEntry Ecc="191" Category="1" Condition="1" Plmn="520 00"/>
     <EccEntry Ecc="911" Category="1" Condition="1" Plmn="520 00"/>
-    <EccEntry Ecc="199" Category="4" Condition="1" Plmn="520 00"/>
-    <EccEntry Ecc="1669" Category="2" Condition="1" Plmn="520 00"/>
-    <EccEntry Ecc="112" Category="1" Condition="1" Plmn="520 04"/>
-    <EccEntry Ecc="191" Category="1" Condition="1" Plmn="520 04"/>
-    <EccEntry Ecc="911" Category="1" Condition="1" Plmn="520 04"/>
-    <EccEntry Ecc="199" Category="4" Condition="1" Plmn="520 04"/>
-    <EccEntry Ecc="1669" Category="2" Condition="1" Plmn="520 04"/>
 
-    <!-- Add for Thailand DTAC due to AOSP eccdata will treat it as ecc -->
-    <EccEntry Ecc="191" Category="0" Condition="2" Plmn="520 05"/>
-    <EccEntry Ecc="191" Category="0" Condition="2" Plmn="520 18"/>
-    <EccEntry Ecc="191" Category="0" Condition="2" Plmn="520 47"/>
+    <EccEntry Ecc="112" Category="1" Condition="1" Plmn="520 04"/>
+    <EccEntry Ecc="911" Category="1" Condition="1" Plmn="520 04"/>
+
 
     <!-- xiaomi add being -->
      <!-- Add for Greece operator -->
@@ -385,9 +372,9 @@
     <EccEntry Ecc="066" Category="0" Condition="1" Plmn = "334 FFF" />
 
     <!-- Add for Myanmar operator -->
-    <EccEntry Ecc="191" Category="0" Condition="2" Plmn = "414 FFF" />
-    <EccEntry Ecc="192" Category="0" Condition="2" Plmn = "414 FFF" />
-    <EccEntry Ecc="199" Category="0" Condition="2" Plmn = "414 FFF" />
+    <EccEntry Ecc="191" Category="4" Condition="2" Plmn = "414 FFF" />
+    <EccEntry Ecc="192" Category="2" Condition="2" Plmn = "414 FFF" />
+    <EccEntry Ecc="199" Category="1" Condition="2" Plmn = "414 FFF" />
 
     <!-- Add for Palestine operator -->
     <EccEntry Ecc="100" Category="0" Condition="2" Plmn = "425 FFF" />
@@ -455,9 +442,9 @@
     <EccEntry Ecc="192" Category="0" Condition="0" Plmn = "515 FFF" />
 
     <!-- Add for Thailand operator -->
-    <EccEntry Ecc="191" Category="0" Condition="0" Plmn = "520 FFF" />
-    <EccEntry Ecc="1669" Category="0" Condition="0" Plmn = "520 FFF" />
-    <EccEntry Ecc="199" Category="0" Condition="0" Plmn = "520 FFF" />
+    <EccEntry Ecc="191" Category="0" Condition="2" Plmn = "520 FFF" />
+    <EccEntry Ecc="1669" Category="0" Condition="2" Plmn = "520 FFF" />
+    <EccEntry Ecc="199" Category="0" Condition="2" Plmn = "520 FFF" />
 
     <!-- Add for Singapore operator -->
     <EccEntry Ecc="119" Category="0" Condition="1" Plmn = "525 FFF" />
