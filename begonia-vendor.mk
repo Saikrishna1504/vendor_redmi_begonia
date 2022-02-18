@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/redmi/begonia
 
 PRODUCT_COPY_FILES += \
+    vendor/redmi/begonia/proprietary/bin/charger:$(TARGET_COPY_OUT_SYSTEM)/bin/charger \
     vendor/redmi/begonia/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
     vendor/redmi/begonia/proprietary/product/etc/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
     vendor/redmi/begonia/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
