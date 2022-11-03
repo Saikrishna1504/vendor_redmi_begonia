@@ -1208,6 +1208,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaalservice.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libakm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libakm.so \
+    vendor/redmi/begonia/proprietary/vendor/lib/libalsautils-v30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils-v30.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_dualcam_refocus.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libarmnn_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
@@ -1784,6 +1785,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libalRnBRT_GL_GBWRAPPER.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalRnBRT_GL_GBWRAPPER.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
+    vendor/redmi/begonia/proprietary/vendor/lib64/libalsautils-v30.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils-v30.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libapu-apuwareutils.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu-apuwareutils.mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libapu-apuwarexrp.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu-apuwarexrp.mtk.so \
     vendor/redmi/begonia/proprietary/vendor/lib64/libapu-frontend.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu-frontend.so \
