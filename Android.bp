@@ -7,7 +7,7 @@ soong_namespace {
 
 android_app_import {
 	name: "LocationEM2",
-	owner: "xiaomi",
+	owner: "redmi",
 	apk: "proprietary/app/LocationEM2/LocationEM2.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -17,7 +17,7 @@ android_app_import {
 
 android_app_import {
 	name: "YGPS",
-	owner: "xiaomi",
+	owner: "redmi",
 	apk: "proprietary/app/YGPS/YGPS.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -27,7 +27,7 @@ android_app_import {
 
 android_app_import {
 	name: "EngineerMode",
-	owner: "xiaomi",
+	owner: "redmi",
 	apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",
 	certificate: "platform",
 	dex_preopt: {
@@ -60,7 +60,7 @@ android_app_import {
 
 android_app_import {
 	name: "EmCamera",
-	owner: "xiaomi",
+	owner: "redmi",
 	apk: "proprietary/vendor/app/EmCamera/EmCamera.apk",
 	certificate: "platform",
 	dex_preopt: {
