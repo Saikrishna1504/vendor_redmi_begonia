@@ -5,6 +5,22 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+	name: "libfmjni",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/lib64/libfmjni.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+}
+
 android_app_import {
 	name: "LocationEM2",
 	owner: "redmi",
