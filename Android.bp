@@ -144,24 +144,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.wifi.hostapd",
-	owner: "redmi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.wifi@1.0-service",
-	owner: "redmi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "fp_manifest",
 	owner: "redmi",
 	src: "proprietary/vendor/etc/vintf/manifest/fp_manifest.xml",
