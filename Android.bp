@@ -171,6 +171,24 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_vendor.dolby.hardware.dms",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "power-default",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/power-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.mediatek.hardware.dplanner@2.0-service",
 	owner: "redmi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml",
