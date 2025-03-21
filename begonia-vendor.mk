@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
-    vendor/redmi/begonia/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/redmi/begonia/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
     vendor/redmi/begonia/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
@@ -61,7 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
@@ -104,7 +102,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init_connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_connectivity.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/microtrust_begonia.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust_begonia.rc \
@@ -132,7 +129,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/redmi/begonia/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
-    vendor/redmi/begonia/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/redmi/begonia/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_bt_bt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_bt_bt.bin \
     vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_hsmic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_hsmic_hs.bin \
@@ -261,6 +257,13 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 
 PRODUCT_PACKAGES += \
+    libaudio_param_parser-sys \
+    libaudiotoolkit \
+    libaudioutilmtk \
+    libem_audio_jni \
+    libem_support_jni \
+    libem_usb_jni \
+    libem_wifi_jni \
     libmtk_vt_wrapper \
     libmtkavenhancements \
     libvcodec_cap \
@@ -314,7 +317,6 @@ PRODUCT_PACKAGES += \
     gps.default \
     kmsetkey.beanpod \
     libSoftGatekeeper \
-    lights.mt6785 \
     nfc_nci.nqx.default \
     sensors.touch \
     sound_trigger.primary.mt6785 \
@@ -543,7 +545,6 @@ PRODUCT_PACKAGES += \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
-    libMtkOmxCore \
     libMtkSpeechEnh \
     libNoFpsActor \
     libOpenCL \
@@ -718,7 +719,6 @@ PRODUCT_PACKAGES += \
     libssccalapi \
     libssl-md \
     libssl-ss \
-    libstagefrighthw \
     libstrongswan \
     libsysenv \
     libteeclientjni \
@@ -739,8 +739,6 @@ PRODUCT_PACKAGES += \
     libvpu \
     libvsim \
     libwapi \
-    libwlparser \
-    libwlservice \
     libwo \
     libwvhidl \
     libwvkeybox \
@@ -803,13 +801,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature@1.0 \
     libDR \
     libHEVCdec_sa.ca7.android \
-    libMtkOmxAdpcmDec \
-    libMtkOmxAlacDec \
-    libMtkOmxApeDec \
-    libMtkOmxGsmDec \
-    libMtkOmxMp3Dec \
-    libMtkOmxVdecEx \
-    libMtkOmxVenc \
     libfgauge_gm30 \
     libh264dec_customize \
     libh264dec_sa.ca7 \
@@ -989,16 +980,15 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0 \
     wechat.beanpod \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
+    LocationEM2 \
+    YGPS \
+    EngineerMode \
     ImsService \
     SoterService \
-    HotwordEnrollmentOKGoogleCORTEXM4 \
-    HotwordEnrollmentXGoogleCORTEXM4 \
-    com.android.hotwordenrollment.common.util \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     fp_manifest.xml \
-    lights-mtk-default.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vtservice \
     SoterProvisioningTool \
@@ -1023,8 +1013,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.0-service.beanpod \
-    android.hardware.lights-service.mediatek \
-    android.hardware.media.omx@1.0-service \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.sensors@1.0-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
@@ -1072,7 +1060,6 @@ PRODUCT_PACKAGES += \
     muxreport \
     netdagent \
     nvram_daemon \
-    osal_ut \
     pnscr \
     rttv \
     starter \
@@ -1095,6 +1082,8 @@ PRODUCT_PACKAGES += \
     xcap
 
 PRODUCT_PACKAGES += \
+    libem_support_jni_libem_support_jni_symlink32 \
+    libem_support_jni_libem_support_jni_symlink64 \
     libGLES_mali_vulkan.mt6785_symlink32 \
     libSoftGatekeeper_gatekeeper.default_symlink32 \
     libGLES_mali_vulkan.mt6785_symlink64 \
