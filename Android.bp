@@ -18,11 +18,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libaudio_param_parser-sys.so"],
+			srcs: ["proprietary/system/lib/libaudio_param_parser-sys.so"],
 			shared_libs: ["libutils", "libcutils", "liblog", "libbinder", "libaudioclient", "libhidlbase", "android.hardware.audio@6.0", "vendor.mediatek.hardware.audio@6.1", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libaudio_param_parser-sys.so"],
+			srcs: ["proprietary/system/lib64/libaudio_param_parser-sys.so"],
 			shared_libs: ["libutils", "libcutils", "liblog", "libbinder", "libaudioclient", "libhidlbase", "android.hardware.audio@6.0", "vendor.mediatek.hardware.audio@6.1", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -38,11 +38,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libaudiotoolkit.so"],
+			srcs: ["proprietary/system/lib/libaudiotoolkit.so"],
 			shared_libs: ["liblog", "libcutils", "libutils", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libaudiotoolkit.so"],
+			srcs: ["proprietary/system/lib64/libaudiotoolkit.so"],
 			shared_libs: ["liblog", "libcutils", "libutils", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -58,10 +58,10 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libaudioutilmtk.so"],
+			srcs: ["proprietary/system/lib/libaudioutilmtk.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libaudioutilmtk.so"],
+			srcs: ["proprietary/system/lib64/libaudioutilmtk.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -77,11 +77,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libem_audio_jni.so"],
+			srcs: ["proprietary/system/lib/libem_audio_jni.so"],
 			shared_libs: ["libnativehelper", "libandroid_runtime", "libutils", "libui", "libcutils", "libaudioclient", "liblog", "libaudiotoolkit", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libem_audio_jni.so"],
+			srcs: ["proprietary/system/lib64/libem_audio_jni.so"],
 			shared_libs: ["libnativehelper", "libandroid_runtime", "libutils", "libui", "libcutils", "libaudioclient", "liblog", "libaudiotoolkit", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -97,11 +97,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libem_support_jni.so"],
+			srcs: ["proprietary/system/lib/libem_support_jni.so"],
 			shared_libs: ["libandroid_runtime", "libcutils", "liblog", "libutils", "libgui", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libem_support_jni.so"],
+			srcs: ["proprietary/system/lib64/libem_support_jni.so"],
 			shared_libs: ["libjni_shim", "libandroid_runtime", "libcutils", "liblog", "libutils", "libgui", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -118,11 +118,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libem_usb_jni.so"],
+			srcs: ["proprietary/system/lib/libem_usb_jni.so"],
 			shared_libs: ["libnativehelper", "libandroid_runtime", "libutils", "libui", "libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libem_usb_jni.so"],
+			srcs: ["proprietary/system/lib64/libem_usb_jni.so"],
 			shared_libs: ["libnativehelper", "libandroid_runtime", "libutils", "libui", "libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -138,11 +138,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libem_wifi_jni.so"],
+			srcs: ["proprietary/system/lib/libem_wifi_jni.so"],
 			shared_libs: ["libandroid_runtime", "libui", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libem_wifi_jni.so"],
+			srcs: ["proprietary/system/lib64/libem_wifi_jni.so"],
 			shared_libs: ["libandroid_runtime", "libui", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -158,10 +158,10 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libmtk_vt_wrapper.so"],
+			srcs: ["proprietary/system/lib/libmtk_vt_wrapper.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libmtk_vt_wrapper.so"],
+			srcs: ["proprietary/system/lib64/libmtk_vt_wrapper.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -177,10 +177,10 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libmtkavenhancements.so"],
+			srcs: ["proprietary/system/lib/libmtkavenhancements.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libmtkavenhancements.so"],
+			srcs: ["proprietary/system/lib64/libmtkavenhancements.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -196,11 +196,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libvcodec_cap.so"],
+			srcs: ["proprietary/system/lib/libvcodec_cap.so"],
 			shared_libs: ["libui", "libcutils", "libutils", "libbinder", "libexpat", "liblog", "libvcodec_capenc", "libstagefright_omx_utils", "libstagefright_foundation", "libion", "android.hardware.graphics.bufferqueue@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libvcodec_cap.so"],
+			srcs: ["proprietary/system/lib64/libvcodec_cap.so"],
 			shared_libs: ["libui", "libcutils", "libutils", "libbinder", "libexpat", "liblog", "libvcodec_capenc", "libstagefright_omx_utils", "libstagefright_foundation", "libion", "android.hardware.graphics.bufferqueue@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -216,11 +216,11 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libvcodec_capenc.so"],
+			srcs: ["proprietary/system/lib/libvcodec_capenc.so"],
 			shared_libs: ["liblog", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary//lib64/libvcodec_capenc.so"],
+			srcs: ["proprietary/system/lib64/libvcodec_capenc.so"],
 			shared_libs: ["liblog", "libion", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -236,7 +236,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libcomutils.so"],
+			srcs: ["proprietary/system/lib/libcomutils.so"],
 			shared_libs: ["libcutils", "libstagefright_foundation", "libutils", "libstagefright", "libmedia", "liblog", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -252,7 +252,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libimsma.so"],
+			srcs: ["proprietary/system/lib/libimsma.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -268,7 +268,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libimsma_adapt.so"],
+			srcs: ["proprietary/system/lib/libimsma_adapt.so"],
 			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -284,7 +284,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libimsma_rtp.so"],
+			srcs: ["proprietary/system/lib/libimsma_rtp.so"],
 			shared_libs: ["libbinder", "libmedia", "libutils", "libcutils", "libstagefright", "libstagefright_foundation", "libimsma_socketwrapper", "libvcodec_cap", "libimsma_adapt", "liblog", "libsignal", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -300,7 +300,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libimsma_socketwrapper.so"],
+			srcs: ["proprietary/system/lib/libimsma_socketwrapper.so"],
 			shared_libs: ["libbinder", "libmedia", "libutils", "libcutils", "libstagefright", "libstagefright_foundation", "libnetd_client", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -316,7 +316,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libmtk_vt_service.so"],
+			srcs: ["proprietary/system/lib/libmtk_vt_service.so"],
 		},
 	},
 	compile_multilib: "32",
@@ -332,7 +332,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libsignal.so"],
+			srcs: ["proprietary/system/lib/libsignal.so"],
 			shared_libs: ["libcutils", "libutils", "libstagefright_foundation", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -348,7 +348,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libsink.so"],
+			srcs: ["proprietary/system/lib/libsink.so"],
 			shared_libs: ["libshim_vtservice", "libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -364,7 +364,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libsource.so"],
+			srcs: ["proprietary/system/lib/libsource.so"],
 			shared_libs: ["libui_shim", "libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libmedia_omx", "libui", "libutils", "libcamera_client", "libcomutils", "libvcodec_cap", "liblog", "libsignal", "libhardware", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -380,7 +380,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary//lib/libvt_avsync.so"],
+			srcs: ["proprietary/system/lib/libvt_avsync.so"],
 			shared_libs: ["libbinder", "libutils", "libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -396,7 +396,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkadpcmextractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkadpcmextractor.so"],
 			shared_libs: ["libmtkavenhancements", "libbinder_ndk", "liblog", "libmediandk", "libcutils", "libstagefright_foundation", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -413,7 +413,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkalacextractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkalacextractor.so"],
 			shared_libs: ["liblog", "libmediandk", "libcutils", "libstagefright_foundation", "libmedia", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -430,7 +430,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkapeextractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkapeextractor.so"],
 			shared_libs: ["libmtkavenhancements", "liblog", "libmediandk", "libcutils", "libstagefright_foundation", "libmedia", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -447,7 +447,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkasfextractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkasfextractor.so"],
 			shared_libs: ["liblog", "libmediandk", "libstagefright_foundation", "libcutils", "libmedia", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -464,7 +464,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkaviextractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkaviextractor.so"],
 			shared_libs: ["liblog", "libmediandk", "libutils", "libstagefright_foundation", "libstagefright_omx_utils", "libstagefright", "libmedia_omx", "libbinder", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -481,7 +481,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkflvextractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkflvextractor.so"],
 			shared_libs: ["liblog", "libmediandk", "libutils", "libmedia", "libstagefright", "libstagefright_foundation", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -498,7 +498,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkmp3extractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkmp3extractor.so"],
 			shared_libs: ["libcutils", "liblog", "libmediandk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -515,7 +515,7 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary//lib64/extractors/libmtkmpeg2extractor.so"],
+			srcs: ["proprietary/system/lib64/extractors/libmtkmpeg2extractor.so"],
 			shared_libs: ["android.hardware.cas@1.0", "android.hardware.cas.native@1.0", "android.hidl.token@1.0-utils", "android.hidl.allocator@1.0", "libhidlmemory", "libhidlbase", "liblog", "libmediandk", "libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -14436,7 +14436,7 @@ cc_prebuilt_library_shared {
 android_app_import {
 	name: "LocationEM2",
 	owner: "redmi",
-	apk: "proprietary/app/LocationEM2/LocationEM2.apk",
+	apk: "proprietary/system/app/LocationEM2/LocationEM2.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -14446,7 +14446,7 @@ android_app_import {
 android_app_import {
 	name: "YGPS",
 	owner: "redmi",
-	apk: "proprietary/app/YGPS/YGPS.apk",
+	apk: "proprietary/system/app/YGPS/YGPS.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -14456,7 +14456,7 @@ android_app_import {
 android_app_import {
 	name: "EngineerMode",
 	owner: "redmi",
-	apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",
+	apk: "proprietary/system/priv-app/EngineerMode/EngineerMode.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -14467,7 +14467,7 @@ android_app_import {
 android_app_import {
 	name: "ImsService",
 	owner: "redmi",
-	apk: "proprietary/priv-app/ImsService/ImsService.apk",
+	apk: "proprietary/system/priv-app/ImsService/ImsService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -14536,7 +14536,7 @@ cc_prebuilt_binary {
 	owner: "redmi",
 	target: {
 		android_arm: {
-			srcs: ["proprietary/bin/vtservice"],
+			srcs: ["proprietary/system/bin/vtservice"],
 			shared_libs: ["libbinder", "libutils", "libcutils", "liblog", "libmtk_vt_service", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -15933,13 +15933,13 @@ cc_prebuilt_binary {
 install_symlink {
 	name: "libem_support_jni_libem_support_jni_symlink32",
 	installed_location: "system/priv-app/EngineerMode/lib/arm/libem_support_jni.so",
-	symlink_target: "/lib/libem_support_jni.so",
+	symlink_target: "/system/lib/libem_support_jni.so",
 }
 
 install_symlink {
 	name: "libem_support_jni_libem_support_jni_symlink64",
 	installed_location: "system/priv-app/EngineerMode/lib64/arm64/libem_support_jni.so",
-	symlink_target: "/lib64/libem_support_jni.so",
+	symlink_target: "/system/lib64/libem_support_jni.so",
 }
 
 install_symlink {
