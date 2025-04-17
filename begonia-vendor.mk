@@ -985,6 +985,15 @@ PRODUCT_PACKAGES += \
     EngineerMode \
     ImsService \
     SoterService \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-ims-extension-plugin \
+    mediatek-ims-legacy \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
