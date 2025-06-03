@@ -12,9 +12,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
-    vendor/redmi/begonia/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2041:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2041 \
-    vendor/redmi/begonia/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2041_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2041_ENUM \
-    vendor/redmi/begonia/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
     vendor/redmi/begonia/proprietary/vendor/etc/camera/CFR_para_T.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_T.bin \
     vendor/redmi/begonia/proprietary/vendor/etc/camera/CFR_para_UW.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW.bin \
     vendor/redmi/begonia/proprietary/vendor/etc/camera/CFR_para_W.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W.bin \
@@ -30,7 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/camera/visidon_clearshot_params_algoup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/visidon_clearshot_params_algoup.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/csot_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/csot_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/device_features/begonia.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/begonia.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/ebbg_fhd_ft8719_dsi_vdo_lcm_drv_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ebbg_fhd_ft8719_dsi_vdo_lcm_drv_mi.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -64,30 +60,19 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service-mediatek.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/atci_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atci_service.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.batteryd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batteryd.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.fmradio_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fmradio_drv.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.mfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.mishow.ctl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mishow.ctl.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.udc_lib.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.udc_lib.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.volte_imcb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imcb.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.volte_imsm_93.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imsm_93.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
@@ -96,27 +81,20 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.wfca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wfca.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.xcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xcap.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init_connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_connectivity.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/microtrust_begonia.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust_begonia.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
@@ -124,60 +102,10 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/redmi/begonia/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
-    vendor/redmi/begonia/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
     vendor/redmi/begonia/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
-    vendor/redmi/begonia/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_bt_bt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_bt_bt.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_hsmic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_hsmic_hs.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_mic_hp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_mic_hp.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_mic_recv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_mic_recv.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_mic_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_mic_spk.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Phone_mic_spk_ev.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Phone_mic_spk_ev.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_hs_cam.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_hs_cam.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_hs_fast.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_hs_fast.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_hs_normal.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_hs_normal.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_hs_unprocess.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_hs_unprocess.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_hs_vr.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_hs_vr.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_mic_cam.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_mic_cam.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_mic_fast.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_mic_fast.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_mic_normal.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_mic_normal.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_mic_unprocess.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_mic_unprocess.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/Record_mic_vr.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/Record_mic_vr.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_bt_bt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_bt_bt.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_hsmic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_hsmic_hs.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_hsmic_hs_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_hsmic_hs_game.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_hp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_hp.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_hp_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_hp_game.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_hs.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_recv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_recv.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_recv_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_recv_game.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_spk.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/nxp/VoIP_mic_spk_game.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/VoIP_mic_spk_game.bin \
-    vendor/redmi/begonia/proprietary/vendor/etc/pdc.txt:$(TARGET_COPY_OUT_VENDOR)/etc/pdc.txt \
-    vendor/redmi/begonia/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
-    vendor/redmi/begonia/proprietary/vendor/etc/pm_test_item_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pm_test_item_config.xml \
-    vendor/redmi/begonia/proprietary/vendor/etc/screen_light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/screen_light.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
-    vendor/redmi/begonia/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_bootup.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_bootup.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_ese_disableIso.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_ese_disableIso.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_ese_disableIsoRead.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_ese_disableIsoRead.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_nfcon.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_chr.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_chr.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_cui.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_cui.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ese_3.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_3.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ese_aclog.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_aclog.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ese_cplc.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_cplc.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ese_fabkey.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_fabkey.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ese_free.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_free.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ese_keyset.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_keyset.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ese_sn.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ese_sn.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_ndi.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_ndi.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_pcv.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_pcv.pnscr \
-    vendor/redmi/begonia/proprietary/vendor/etc/sn100u_pnx_sst.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_pnx_sst.pnscr \
     vendor/redmi/begonia/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/spn-conf-op09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spn-conf-op09.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-arvr.conf \
@@ -257,43 +185,203 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/fc32e4da17d342449b01c992d56d71bf.ta
 
 PRODUCT_PACKAGES += \
-    libaudio_param_parser-sys \
-    libaudiotoolkit \
-    libaudioutilmtk \
-    libem_audio_jni \
     libem_support_jni \
-    libem_usb_jni \
-    libem_wifi_jni \
-    libmtk_vt_wrapper \
-    libmtkavenhancements \
-    libvcodec_cap \
-    libvcodec_capenc \
     libcomutils \
     libimsma \
     libimsma_adapt \
     libimsma_rtp \
     libimsma_socketwrapper \
     libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libmtkavenhancements \
     libsignal \
     libsink \
     libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
     libvt_avsync \
-    libmtkadpcmextractor \
-    libmtkalacextractor \
-    libmtkapeextractor \
-    libmtkasfextractor \
-    libmtkaviextractor \
-    libmtkflvextractor \
-    libmtkmp3extractor \
-    libmtkmpeg2extractor \
-    libfmjni \
-    AVCSecureVdecCA \
-    VP9SecureVdecCA \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
     libGLES_meow \
     libMEOW_gift \
     libMEOW_trace \
+    android.hardware.bluetooth@1.0-impl-mediatek \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
+    android.hardware.thermal@2.0-impl \
+    dfps.mt6785 \
+    displayfeature.default \
+    nfc_nci.nqx.default \
+    thermal.mt6785 \
+    vendor.mediatek.hardware.dfps@1.0-impl \
+    vendor.mediatek.hardware.mms@1.5-impl \
+    vendor.mediatek.hardware.nvram@1.1-impl \
+    vendor.mediatek.hardware.pq@2.6-impl \
+    vendor.xiaomi.hardware.displayfeature@1.0-impl \
+    libDefaultFpsActor \
+    libFrameRecord \
+    libJpgEncPipe \
+    libNoFpsActor \
+    libOpenCL \
+    libTEECommon \
+    libaal_cust \
+    libaal_key \
+    libaal_mtk \
+    libaalservice \
+    libaedv \
+    libbwc \
+    libcapctrl \
+    libcares_naptr \
+    libcarrierconfig \
+    libccci_util \
+    libcrypto-md \
+    libcrypto-ss \
+    libcurl-md \
+    libcurl-ss \
+    libcustom_nvram \
+    libdpframework \
+    libdre \
+    libfile_op \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
+    libgz_gp_client \
+    libgz_uree \
+    libhdrvideo \
+    libhwm \
+    libhydra \
+    libimsg_log \
+    libion_mtk \
+    libion_ulit \
+    libjpeg-alpha-oal_vendor \
+    libjpeg-alpha_vendor \
+    libladder \
+    libmtcloader \
+    libmtk_drvb \
+    libmtkares \
+    libmtkcutils \
+    libmtkhardware_legacy \
+    libmtknetutils \
+    libmtkproperty \
+    libmtkrillog \
+    libmtksysutils \
+    libnvram \
+    libnvram_daemon_callback \
+    libnvram_platform \
+    libnvram_sec \
+    libpq_cust_base \
+    libpq_prot \
+    libsimaka \
+    libssl-md \
+    libssl-ss \
+    libstrongswan \
+    libsysenv \
+    libthha \
+    libudf \
+    libverno \
+    libvpu \
+    libwo \
+    nfc_nci.nqx.default.hw \
+    vendor.mediatek.hardware.dfps@1.0 \
+    vendor.mediatek.hardware.gpu@1.0 \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mms@1.4 \
+    vendor.mediatek.hardware.mms@1.5 \
+    vendor.mediatek.hardware.nvram@1.0 \
+    vendor.mediatek.hardware.nvram@1.1 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
+    vendor.xiaomi.hardware.citsensorservice@1.0 \
+    vendor.xiaomi.hardware.citsensorservice@1.1 \
+    AVCSecureVdecCA \
+    VP9SecureVdecCA \
+    audio.primary.mt6785 \
+    audio.r_submix.mt6785 \
+    audio.usb.mt6785 \
+    sound_trigger.primary.mt6785 \
+    vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
+    vendor.mediatek.hardware.videotelephony@1.0-impl \
+    libDR \
+    libHEVCdec_sa.ca7.android \
+    libMtkSpeechEnh \
+    lib_iir \
+    lib_smartpa_nxp_ap \
+    lib_speech_enh \
+    libalsautils-v30 \
+    libaudio_param_parser-vnd \
+    libaudiocompensationfilter_vendor \
+    libaudiocompensationfilterc \
+    libaudiocomponentengine_vendor \
+    libaudiocomponentenginec \
+    libaudiocustparam_vendor \
+    libaudiodcrflt_vendor \
+    libaudiofmtconv \
+    libaudioloudc \
+    libaudioprimarydevicehalifclient \
+    libaudiosmartpamtk \
+    libaudiotoolkit_vendor \
+    libaurisysdemo \
+    libbessound_hd_mtk_vendor \
+    libblisrc32_vendor \
+    libcharon-ss \
+    libcvsd_mtk \
+    libfgauge_gm30 \
+    libfvaudio \
+    libh264dec_customize \
+    libh264dec_sa.ca7 \
+    libh264enc_sa.ca7 \
+    libipsec_ims_shr \
+    libmnl \
+    libmp4enc_sa.ca7 \
+    libmsbc_mtk \
+    libmtklimiter_vendor \
+    libmtkshifter_vendor \
+    libnxp_extamp_intf \
+    liboemcrypto \
+    librpc \
+    libsn100u_fw \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
+    libstorage_otp \
+    libthermalalgo \
+    libtlcWidevineModularDrm \
+    libvc1dec_sa.ca7 \
+    libvcodec_oal \
+    libvcodec_utility \
+    libvcodecdrv \
+    libviagpsrpc \
+    libvolte_core_shr \
+    libvolte_xdmc_shr \
+    libvow_ap_testing.vendor \
+    libvowp23_sid_testing.vendor \
+    libvowp23_sid_training.vendor \
+    libvowp25testing.vendor \
+    libvowp2training.vendor \
+    libvp8dec_sa.ca7 \
+    libvp8enc_sa.ca7 \
+    libvp9dec_sa.ca7 \
+    libvpud_vcodec \
+    libvt_custom \
+    libwapi \
+    libwvhidl \
+    libwvdrmengine \
+    vendor.mediatek.hardware.audio@6.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.mtkcodecservice@1.1 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
+    APUWareUtilsServer \
+    APUWareXrpServer \
     gc2375af_mipi_raw_IdxMgr \
     gc2375af_mipi_raw_tuning \
     gc2375alpha_mipi_raw_IdxMgr \
@@ -302,38 +390,23 @@ PRODUCT_PACKAGES += \
     gc2375beta_mipi_raw_tuning \
     gc5035_mipi_raw_IdxMgr \
     gc5035_mipi_raw_tuning \
-    android.hardware.bluetooth@1.0-impl-mediatek \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
-    android.hardware.thermal@2.0-impl \
-    audio.primary.mt6785 \
-    audio.r_submix.mt6785 \
-    audio.usb.mt6785 \
+    android.hardware.camera.provider@2.4-impl-mediatek \
+    android.hardware.gnss@2.1-impl-mediatek \
+    android.hardware.sensors@1.0-impl-mediatek \
     consumerir.mt6785 \
-    dfps.mt6785 \
-    displayfeature.default \
+    fpc_fingerprint.default \
     gatekeeper.beanpod \
     gf_fingerprint.default \
     gps.default \
+    hwcomposer.mt6785 \
     kmsetkey.beanpod \
-    libSoftGatekeeper \
-    nfc_nci.nqx.default \
+    sensors.mt6785 \
     sensors.touch \
-    sound_trigger.primary.mt6785 \
-    thermal.mt6785 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
+    vendor.mediatek.hardware.camera.ccap@1.0-impl \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
-    vendor.mediatek.hardware.dfps@1.0-impl \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mms@1.5-impl \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
-    vendor.mediatek.hardware.nvram@1.1-impl \
-    vendor.mediatek.hardware.pq@2.6-impl \
-    vendor.mediatek.hardware.videotelephony@1.0-impl \
-    vendor.xiaomi.hardware.displayfeature@1.0-impl \
-    jcos_client \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.af.core \
@@ -542,12 +615,6 @@ PRODUCT_PACKAGES += \
     libCamera_s5kgw1sunnymipiraw_Video_Zoom2 \
     libCamera_s5kgw1sunnymipiraw_portrait_capture_full \
     libCamera_s5kgw1sunnymipiraw_portrait_preview_full \
-    libDefaultFpsActor \
-    libFrameRecord \
-    libJpgEncPipe \
-    libMtkSpeechEnh \
-    libNoFpsActor \
-    libOpenCL \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
     libSonyIMX338PdafLibrary \
@@ -556,195 +623,179 @@ PRODUCT_PACKAGES += \
     libSonyIMX386PdafLibraryWrapper \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
-    libTEECommon \
-    lib_iir \
-    lib_smartpa_nxp_ap \
-    lib_speech_enh \
-    libaal_cust \
-    libaal_key \
-    libaal_mtk \
-    libaalservice \
-    libaedv \
-    libakm \
-    libalsautils-v30 \
+    libVDSuperPhotoAPI \
+    libabfadp \
+    libalCFR \
+    libalLDC \
+    libalRnBRT_GL_GBWRAPPER \
+    libalhLDC \
+    libapu-apuwareutils.mtk \
+    libapu-apuwarexrp.mtk \
+    libapu-frontend \
+    libapu-platform \
+    libapusys \
+    libarcsoft_beautyshot \
     libarcsoft_dualcam_refocus \
-    libaudio_param_parser-vnd \
-    libaudiocompensationfilter_vendor \
-    libaudiocompensationfilterc \
-    libaudiocomponentengine_vendor \
-    libaudiocomponentenginec \
-    libaudiocustparam_vendor \
-    libaudiodcrflt_vendor \
-    libaudiofmtconv \
-    libaudioloudc \
-    libaudioprimarydevicehalifclient \
-    libaudiosmartpamtk \
-    libaudiotoolkit_vendor \
-    libaurisysdemo \
-    libbessound_hd_mtk_vendor \
-    libblisrc32_vendor \
-    libbluetooth_audio_session_mediatek \
-    libbluetooth_hw_test \
+    libarcsoft_high_dynamic_range \
+    libarcsoft_low_light_hdr \
+    libarcsoft_portrait_lighting \
+    libarcsoft_portrait_lighting_c \
+    libarcsoft_preview_deflicker \
+    libarmnn_vendor \
+    libarmnn_ndk.mtk \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbluetooth_relayer \
     libbluetoothem_mtk \
     libbt-vendor \
-    libbwc \
+    libc++_shared \
     libcam.ArcCamEngine \
     libcam.feature_utils \
+    libcam.hal3a.cctsvr \
     libcam.hal3a.log \
+    libcam.hal3a.v3.dng \
     libcam.hal3a.v3.lscMgr \
     libcam.hal3a.v3.lsctbl.50 \
     libcam.hal3a.v3.nvram.50 \
     libcam.hal3a.v3 \
+    libcam.halisp \
     libcam.halsensor \
     libcam.iopipe \
+    libcam.lcs \
     libcam.pdtblgen \
     libcam.utils.sensorprovider \
+    libcam.vhdr \
     libcam3a_imem \
+    libcamalgo.3dnr \
+    libcamalgo.asd \
+    libcamalgo.dngop \
+    libcamalgo.eis \
+    libcamalgo.fdft \
     libcamalgo.flicker \
+    libcamalgo.fsc \
+    libcamalgo.gyro \
     libcamalgo.ispfeature \
     libcamalgo.lsc \
+    libcamalgo.mfnr \
+    libcamalgo.n3d \
     libcamalgo.utility \
     libcamalgo.vpunr \
+    libcamalgo.vsf \
+    libcamalgo.warp \
     libcamdrv_imem \
     libcamdrv_isp \
     libcamdrv_tuning_mgr \
     libcamdrv_twin \
+    libcamera_scene \
+    libcameracustom.eis \
     libcameracustom \
-    libcapctrl \
-    libcares_naptr \
-    libcarrierconfig \
-    libccci_util \
-    libcharon-ss \
-    libcheckpid \
     libchromanr \
-    libcrypto-md \
-    libcrypto-ss \
-    libcurl-md \
-    libcurl-ss \
-    libcustom_nvram \
-    libcvsd_mtk \
+    libcmdl \
+    libcmdl_ndk.mtk \
     libdip_drv \
     libdip_imem \
     libdip_postproc \
-    libdpframework \
-    libdre \
+    libeffecthal.base \
+    libfeature.face \
     libfeature.stereo.provider \
-    libfile_op \
-    libfpspolicy \
-    libfvaudio \
-    libged \
+    libfeature.vsdof.hal \
+    libfeature_3dnr \
+    libfeature_eis \
+    libfeature_fsc \
+    libfeature_lmv \
+    libfeature_rss \
+    libforkexecwrap \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
-    libgz_gp_client \
-    libgz_uree \
-    libhdrvideo \
-    libhevce_sb.ca7.android \
-    libhwm \
-    libhydra \
+    libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     libimgsensorca \
-    libimsg_log \
-    libion_mtk \
-    libion_ulit \
-    libipsec_ims_shr \
-    libispcameraca \
-    libjpeg-alpha-oal_vendor \
-    libjpeg-alpha_vendor \
-    libkeystore-wifi-hidl \
-    libladder \
-    liblogwrap_vendor \
-    libminiui \
-    libmnetlink_v104 \
+    libksensor \
+    liblpcnr \
+    libmfllcore \
+    libmialgo_sd \
+    libmialgoengine \
+    libmibokeh_mt6785 \
     libmpbase \
-    libmsbc_mtk \
-    libmtcloader \
-    libmtk_drvb \
-    libmtkares \
+    libmtk-ril \
     libmtkcam.atmseventmgr \
     libmtkcam.eventcallback \
+    libmtkcam.featurepipe.capture \
+    libmtkcam.featurepipe.depthmap \
+    libmtkcam.featurepipe.streaming \
+    libmtkcam.featurepipe.vsdof_util \
     libmtkcam.logicalmodule \
+    libmtkcam_3rdparty.core \
+    libmtkcam_3rdparty.customer \
+    libmtkcam_3rdparty.mtk \
+    libmtkcam_3rdparty \
+    libmtkcam_3rdparty.vidhance \
     libmtkcam_calibration_convertor \
     libmtkcam_calibration_provider \
     libmtkcam_debugutils \
+    libmtkcam_device3 \
+    libmtkcam_device3_app \
+    libmtkcam_dpe \
     libmtkcam_exif \
+    libmtkcam_fdvt \
+    libmtkcam_featurepolicy \
+    libmtkcam_fwkutils \
     libmtkcam_grallocutils \
+    libmtkcam_hwnode \
     libmtkcam_hwutils \
     libmtkcam_imgbuf \
     libmtkcam_mapping_mgr \
     libmtkcam_metadata \
     libmtkcam_metastore \
+    libmtkcam_mfb \
+    libmtkcam_modulefactory_aaa \
+    libmtkcam_modulefactory_custom \
+    libmtkcam_modulefactory_drv \
+    libmtkcam_modulefactory_feature \
+    libmtkcam_modulefactory_utils \
     libmtkcam_modulehelper \
+    libmtkcam_owe \
+    libmtkcam_pipeline \
+    libmtkcam_pipelinemodel \
+    libmtkcam_pipelinemodel_adapter \
+    libmtkcam_pipelinemodel_capture \
+    libmtkcam_pipelinemodel_hbc \
+    libmtkcam_pipelinemodel_session \
+    libmtkcam_pipelinemodel_utils \
+    libmtkcam_pipelinemodel_zsl \
+    libmtkcam_pipelinepolicy-smvr \
+    libmtkcam_pipelinepolicy \
+    libmtkcam_pipelinepolicy_factory \
+    libmtkcam_prerelease \
+    libmtkcam_rsc \
     libmtkcam_stdutils \
     libmtkcam_streamutils \
     libmtkcam_sysutils \
     libmtkcam_tsf \
     libmtkcam_tuning_utils \
     libmtkcam_ulog \
-    libmtkcutils \
-    libmtkhardware_legacy \
-    libmtklimiter_vendor \
-    libmtknetutils \
-    libmtkproperty \
-    libmtkrillog \
-    libmtkshifter_vendor \
-    libmtksysutils \
-    libnvram \
-    libnvram_daemon_callback \
-    libnvram_platform \
-    libnvram_sec \
-    libnwk_opt_halwrap_vendor \
-    libnxp_extamp_intf \
-    libnxprecord \
-    libnxpspeech \
-    liboemcrypto \
-    libpixelflinger \
-    libpq_cust_base \
-    libpq_prot \
-    librgbwlightsensor \
-    libscltm \
-    libsimaka \
-    libspeech_enh_lib \
-    libspeechparser_vendor \
-    libssccalapi \
-    libssl-md \
-    libssl-ss \
-    libstrongswan \
-    libsysenv \
-    libteeclientjni \
-    libteeclientjni@1.1 \
-    libtflite_mtk \
-    libtflite_mtk_static_R \
-    libthha \
-    libtinyxml \
-    libtlcWidevineModularDrm \
-    libudf \
-    libvcodec_oal \
-    libverno \
-    libvow_ap_testing.vendor \
-    libvowp23_sid_testing.vendor \
-    libvowp23_sid_training.vendor \
-    libvowp25testing.vendor \
-    libvowp2training.vendor \
-    libvpu \
-    libvsim \
-    libwapi \
-    libwo \
-    libwvhidl \
-    libwvkeybox \
-    libwvkeyboxext \
-    libwvdrmengine \
-    nfc_nci.nqx.default.hw \
+    libmtkconfig \
+    libmtkconfigutils \
+    libmtkrilutils \
+    libmtktinyxml \
+    libmtkutils \
+    libneuroeara \
+    libneuron_adapter \
+    libneuron_platform \
+    libneuron_runtime \
+    libneuropilot_hal_utils \
+    libneuropilot_jni_R \
+    libnir_neon_driver_ndk.mtk \
+    libratconfig \
+    librilfusion \
+    libsensor_custom \
+    libstereoinfoaccessor_vsdof \
+    libvia-ril \
+    libvidhance \
+    libwifi-hal-mtk \
     ov02a10af_mipi_raw_IdxMgr \
     ov02a10af_mipi_raw_tuning \
     ov02a10alpha_mipi_raw_IdxMgr \
@@ -765,223 +816,27 @@ PRODUCT_PACKAGES += \
     s5kgw1ofilm_mipi_raw_tuning \
     s5kgw1sunny_mipi_raw_IdxMgr \
     s5kgw1sunny_mipi_raw_tuning \
-    se_extn_client \
-    secure_element-impl \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1 \
-    vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
-    vendor.mediatek.hardware.camera.postproc@1.0 \
-    vendor.mediatek.hardware.dfps@1.0 \
-    vendor.mediatek.hardware.gpu@1.0 \
-    vendor.mediatek.hardware.keymaster_attestation@1.0 \
-    vendor.mediatek.hardware.keymaster_attestation@1.1 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mms@1.4 \
-    vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.mtkcodecservice@1.1 \
-    vendor.mediatek.hardware.netdagent@1.0 \
-    vendor.mediatek.hardware.nvram@1.0 \
-    vendor.mediatek.hardware.nvram@1.1 \
-    vendor.mediatek.hardware.nwk_opt@1.0 \
-    vendor.mediatek.hardware.power@2.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.xiaomi.hardware.displayfeature@1.0 \
-    libDR \
-    libHEVCdec_sa.ca7.android \
-    libfgauge_gm30 \
-    libh264dec_customize \
-    libh264dec_sa.ca7 \
-    libh264dec_sd.ca7 \
-    libh264dec_se.ca7 \
-    libh264enc_sa.ca7 \
-    libmnl \
-    libmp4enc_sa.ca7 \
-    libmp4enc_xa.ca7 \
-    librpc \
-    libsn100u_fw \
-    libstorage_otp \
-    libthermalalgo \
-    libvc1dec_sa.ca7 \
-    libvcodec_utility \
-    libvcodecdrv \
-    libviagpsrpc \
-    libvolte_core_shr \
-    libvolte_xdmc_shr \
-    libvp8dec_sa.ca7 \
-    libvp8enc_sa.ca7 \
-    libvp9dec_sa.ca7 \
-    libvpud_vcodec \
-    libvt_custom \
-    APUWareUtilsServer \
-    APUWareXrpServer \
-    com.fingerprints.extension@1.0 \
-    android.hardware.camera.provider@2.4-impl-mediatek \
-    android.hardware.gnss@2.1-impl-mediatek \
-    android.hardware.sensors@1.0-impl-mediatek \
-    fpc_fingerprint.default \
-    hwcomposer.mt6785 \
-    sensors.mt6785 \
-    vendor.mediatek.hardware.camera.ccap@1.0-impl \
-    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
-    lbs_hidl_service-impl \
-    libVDSuperPhotoAPI \
-    libabfadp \
-    libacdk \
-    libalCFR \
-    libalLDC \
-    libalRnBRT_GL_GBWRAPPER \
-    libalhLDC \
-    libapu-apuwareutils.mtk \
-    libapu-apuwarexrp.mtk \
-    libapu-frontend \
-    libapu-platform \
-    libapusys \
-    libarcsoft_beautyshot \
-    libarcsoft_high_dynamic_range \
-    libarcsoft_low_light_hdr \
-    libarcsoft_portrait_lighting \
-    libarcsoft_portrait_lighting_c \
-    libarcsoft_preview_deflicker \
-    libarmnn \
-    libarmnn_ndk.mtk \
-    libc++_shared \
-    libcam.hal3a.cctsvr \
-    libcam.hal3a.v3.dng \
-    libcam.halisp \
-    libcam.lcs \
-    libcam.vhdr \
-    libcamalgo.3dnr \
-    libcamalgo.asd \
-    libcamalgo.dngop \
-    libcamalgo.eis \
-    libcamalgo.fdft \
-    libcamalgo.fsc \
-    libcamalgo.gyro \
-    libcamalgo.mfnr \
-    libcamalgo.n3d \
-    libcamalgo.vsf \
-    libcamalgo.warp \
-    libcamera_scene \
-    libcameracustom.eis \
-    libcmdl \
-    libcmdl_ndk.mtk \
-    libeffecthal.base \
-    libfeature.face \
-    libfeature.vsdof.hal \
-    libfeature_3dnr \
-    libfeature_eis \
-    libfeature_fsc \
-    libfeature_lmv \
-    libfeature_rss \
-    libfft_vendor \
-    libforkexecwrap \
-    libgwsd-ril \
-    libifcutils_mtk \
-    libkeystore-engine-wifi-hidl \
-    libkmsetkey \
-    libksensor \
-    liblpcnr \
-    libmfllcore \
-    libmialgo_sd \
-    libmialgoengine \
-    libmibokeh_mt6785 \
-    libmtk-ril \
-    libmtkcam.featurepipe.capture \
-    libmtkcam.featurepipe.depthmap \
-    libmtkcam.featurepipe.streaming \
-    libmtkcam.featurepipe.vsdof_util \
-    libmtkcam_3rdparty.core \
-    libmtkcam_3rdparty.customer \
-    libmtkcam_3rdparty.mtk \
-    libmtkcam_3rdparty \
-    libmtkcam_3rdparty.vidhance \
-    libmtkcam_device3 \
-    libmtkcam_device3_app \
-    libmtkcam_dpe \
-    libmtkcam_fdvt \
-    libmtkcam_featurepolicy \
-    libmtkcam_fwkutils \
-    libmtkcam_hwnode \
-    libmtkcam_mfb \
-    libmtkcam_modulefactory_aaa \
-    libmtkcam_modulefactory_custom \
-    libmtkcam_modulefactory_drv \
-    libmtkcam_modulefactory_feature \
-    libmtkcam_modulefactory_utils \
-    libmtkcam_owe \
-    libmtkcam_pipeline \
-    libmtkcam_pipelinemodel \
-    libmtkcam_pipelinemodel_adapter \
-    libmtkcam_pipelinemodel_capture \
-    libmtkcam_pipelinemodel_hbc \
-    libmtkcam_pipelinemodel_session \
-    libmtkcam_pipelinemodel_utils \
-    libmtkcam_pipelinemodel_zsl \
-    libmtkcam_pipelinepolicy-smvr \
-    libmtkcam_pipelinepolicy \
-    libmtkcam_pipelinepolicy_factory \
-    libmtkcam_prerelease \
-    libmtkcam_rsc \
-    libmtkconfig \
-    libmtkconfigutils \
-    libmtkrilutils \
-    libmtktinyxml \
-    libmtkutils \
-    libneuroeara \
-    libneuron_adapter \
-    libneuron_platform \
-    libneuron_runtime \
-    libneuropilot_hal_utils \
-    libneuropilot_jni_R \
-    libnir_neon_driver \
-    libnir_neon_driver_ndk.mtk \
-    libratconfig \
-    librilfusion \
-    libsensor_custom \
-    libstereoinfoaccessor_vsdof \
-    libvia-ril \
-    libvidhance \
-    libwifi-hal-mtk \
-    libwifitest \
-    nwk_opt_imp \
-    vendor.mediatek.hardware.apuware.utils@1.0 \
-    vendor.mediatek.hardware.apuware.xrp@1.0 \
-    vendor.mediatek.hardware.atci@1.0 \
     vendor.mediatek.hardware.camera.ccap@1.0 \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
     vendor.mediatek.hardware.camera.lomoeffect@1.0 \
+    vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.engineermode@1.0 \
     vendor.mediatek.hardware.engineermode@1.1 \
     vendor.mediatek.hardware.engineermode@1.2 \
     vendor.mediatek.hardware.engineermode@1.3 \
-    vendor.mediatek.hardware.lbs@1.0 \
-    vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
+    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@2.0 \
     vendor.microtrust.hardware.soter@1.0 \
-    vendor.xiaomi.hardware.citsensorservice@1.0 \
-    vendor.xiaomi.hardware.citsensorservice@1.0_vendor \
-    vendor.xiaomi.hardware.citsensorservice@1.1 \
-    vendor.xiaomi.hardware.citsensorservice@1.1_vendor \
-    vendor.xiaomi.hardware.fingerprintextension@1.0 \
     wechat.beanpod \
-    vendor.mediatek.hardware.videotelephony@1.0_vendor \
-    LocationEM2 \
-    YGPS \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     EngineerMode \
     ImsService \
     SoterService \
@@ -1000,18 +855,11 @@ PRODUCT_PACKAGES += \
     fp_manifest.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vtservice \
-    SoterProvisioningTool \
-    atci_service \
-    atcid \
-    audiocmdservice_atci \
-    autobt \
     batteryd \
-    bip \
     bp_kmsetkey_ca \
     ccci_fsd \
     ccci_mdinit \
     ccci_rpcd \
-    charon \
     em_hidl \
     epdg_wod \
     fuelgauged \
@@ -1031,18 +879,13 @@ PRODUCT_PACKAGES += \
     mtkfusionrild \
     vendor.mediatek.hardware.dfps@1.0-service \
     vendor.mediatek.hardware.gpu@1.0-service \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mms@1.5-service \
     vendor.mediatek.hardware.mtkcodecservice@1.1-service \
     vendor.mediatek.hardware.nvram@1.1-service \
-    vendor.mediatek.hardware.nwk_opt@1.0-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.microtrust.hardware.soter@1.0-service \
     vendor.xiaomi.hardware.displayfeature@1.0-service \
     vtservice_hidl \
-    ipsec_mon \
-    jpegtool \
-    lbs_hidl_service \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
     lib3a.ccu.pm \
@@ -1060,19 +903,14 @@ PRODUCT_PACKAGES += \
     libccu_s5k3t2_mipi_raw.ddr \
     libccu_s5kgw1ofilm_mipi_raw.ddr \
     libccu_s5kgw1sunny_mipi_raw.ddr \
-    md_monitor \
-    md_monitor_ctrl \
     mi_thermald \
     mnld \
-    mrdump_tool \
     mtk_agpsd \
     muxreport \
     netdagent \
     nvram_daemon \
-    pnscr \
     rttv \
     starter \
-    stp_dump3 \
     stroke \
     teei_daemon \
     thermal \
@@ -1091,9 +929,5 @@ PRODUCT_PACKAGES += \
     xcap
 
 PRODUCT_PACKAGES += \
-    libem_support_jni_libem_support_jni_symlink32 \
-    libem_support_jni_libem_support_jni_symlink64 \
     libGLES_mali_vulkan.mt6785_symlink32 \
-    libSoftGatekeeper_gatekeeper.default_symlink32 \
-    libGLES_mali_vulkan.mt6785_symlink64 \
-    libSoftGatekeeper_gatekeeper.default_symlink64
+    libGLES_mali_vulkan.mt6785_symlink64
