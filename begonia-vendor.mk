@@ -195,7 +195,7 @@ PRODUCT_PACKAGES += \
     libmtk_vt_wrapper \
     libmtkavenhancements \
     libsignal \
-    libsink \
+    libsink-mtk \
     libsource \
     libvcodec_cap \
     libvcodec_capenc \

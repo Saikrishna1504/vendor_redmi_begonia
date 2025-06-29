@@ -57,11 +57,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/system/lib/libimsma.so"],
-			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libsource", "libvcodec_cap", "libimsma_rtp", "libcomutils", "liblog", "libsignal", "libnetd_client", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libsink-mtk", "libsource", "libvcodec_cap", "libimsma_rtp", "libcomutils", "liblog", "libsignal", "libnetd_client", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
-	check_elf_files: false,
 	prefer: true,
 }
 
@@ -179,14 +178,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsink",
+	name: "libsink-mtk",
 	owner: "redmi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/system/lib/libsink.so"],
+			srcs: ["proprietary/system/lib/libsink-mtk.so"],
 			shared_libs: ["libshim_vtservice", "libbinder", "libcutils", "libgui", "libmedia", "libstagefright", "libstagefright_foundation", "libui", "libutils", "libcomutils", "libvcodec_cap", "libvt_avsync", "liblog", "libmedia_omx", "libaudioclient", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -12085,7 +12084,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/mtkfusionrild"],
-			shared_libs: ["libmtkrillog", "libmtkproperty", "libmtkcutils", "librilfusion", "libmtkrilutils", "libsysenv", "libmtkconfigutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libutils-v32", "libmtkrillog", "libmtkproperty", "libmtkcutils", "librilfusion", "libmtkrilutils", "libsysenv", "libmtkconfigutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
