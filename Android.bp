@@ -2503,7 +2503,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/hw/audio.primary.mt6785.so"],
-			shared_libs: ["libhidlbase", "vendor.mediatek.hardware.mtkpower@1.0", "liblog", "libcutils", "libutils", "libalsautils", "libhardware_legacy", "libhardware", "libaudioutils", "libtinyalsa", "libtinyxml", "libaudiotoolkit_vendor", "libmedia_helper", "libladder", "android.hardware.audio@6.0", "android.hardware.audio.common-util", "android.hardware.audio.common@6.0", "android.hardware.audio.common@6.0-util", "vendor.mediatek.hardware.audio@6.1", "libtinycompress", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libshim_audio", "libhidlbase", "vendor.mediatek.hardware.mtkpower@1.0", "liblog", "libcutils", "libutils", "libalsautils", "libhardware_legacy", "libhardware", "libaudioutils", "libtinyalsa", "libtinyxml", "libaudiotoolkit_vendor", "libmedia_helper", "libladder", "android.hardware.audio@6.0", "android.hardware.audio.common-util", "android.hardware.audio.common@6.0", "android.hardware.audio.common@6.0-util", "vendor.mediatek.hardware.audio@6.1", "libtinycompress", "libaedv", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -2539,7 +2539,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/hw/audio.usb.mt6785.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libalsautils", "libaudioutils", "libtinyalsa", "libtinycompress", "libaudiocustparam_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libutils", "libalsautils-v30", "libaudioutils", "libtinyalsa", "libtinycompress", "libaudiocustparam_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
