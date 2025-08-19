@@ -7996,7 +7996,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libalRnBRT_GL_GBWRAPPER.so"],
-			shared_libs: ["libui", "liblog", "libGLESv2", "libEGL", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libui-v34", "liblog", "libGLESv2", "libEGL", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8507,7 +8507,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcam.hal3a.v3.so"],
-			shared_libs: ["lib3a.ccudrv", "lib3a.ccuif", "libion", "libion_mtk", "lib3a.n3d3a", "libcamalgo.ispfeature", "libcamalgo.utility", "liblog", "libutils", "libcutils", "libladder", "libmtkcam_modulehelper", "libmtkcam_stdutils", "libmtkcam_imgbuf", "libmtkcam_hwutils", "lib3a.gma", "lib3a.lce", "libcamalgo.lsc", "libcamalgo.flicker", "libcam3a_imem", "libmtkcam_metadata", "libmtkcam_metastore", "libmtkcam_sysutils", "libcam.pdtblgen", "vendor.mediatek.hardware.camera.atms@1.0", "libcam.iopipe", "libcam.hal3a.v3.nvram.50", "libcam.hal3a.v3.lsctbl.50", "libcam.hal3a.v3.lscMgr", "libcamdrv_tuning_mgr", "libcam.utils.sensorprovider", "libui", "libhidlbase", "libhidltransport", "libhwbinder", "android.hardware.power@1.0", "vendor.mediatek.hardware.power@2.0", "vendor.mediatek.hardware.mtkpower@1.0", "libcamalgo.vpunr", "libaedv", "libmtkcam_tuning_utils", "libmtkcam_mapping_mgr", "libmtkcam.atmseventmgr", "libcameracustom", "lib3a.af.core", "lib3a.af", "lib3a.awb", "lib3a.awb.core", "lib3a.flash", "lib3a.ae", "lib3a.ae.core", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["lib3a.ccudrv", "lib3a.ccuif", "libion", "libion_mtk", "lib3a.n3d3a", "libcamalgo.ispfeature", "libcamalgo.utility", "liblog", "libutils", "libcutils", "libladder", "libmtkcam_modulehelper", "libmtkcam_stdutils", "libmtkcam_imgbuf", "libmtkcam_hwutils", "lib3a.gma", "lib3a.lce", "libcamalgo.lsc", "libcamalgo.flicker", "libcam3a_imem", "libmtkcam_metadata", "libmtkcam_metastore", "libmtkcam_sysutils", "libcam.pdtblgen", "vendor.mediatek.hardware.camera.atms@1.0", "libcam.iopipe", "libcam.hal3a.v3.nvram.50", "libcam.hal3a.v3.lsctbl.50", "libcam.hal3a.v3.lscMgr", "libcamdrv_tuning_mgr", "libcam.utils.sensorprovider", "libui-v34", "libhidlbase", "libhidltransport", "libhwbinder", "android.hardware.power@1.0", "vendor.mediatek.hardware.power@2.0", "vendor.mediatek.hardware.mtkpower@1.0", "libcamalgo.vpunr", "libaedv", "libmtkcam_tuning_utils", "libmtkcam_mapping_mgr", "libmtkcam.atmseventmgr", "libcameracustom", "lib3a.af.core", "lib3a.af", "lib3a.awb", "lib3a.awb.core", "lib3a.flash", "lib3a.ae", "lib3a.ae.core", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9156,7 +9156,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libeffecthal.base.so"],
-			shared_libs: ["libui", "liblog", "libutils", "libcutils", "libmtkcam_stdutils", "libmtkcam_imgbuf", "libcameracustom", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libui-v34", "liblog", "libutils", "libcutils", "libmtkcam_stdutils", "libmtkcam_imgbuf", "libcameracustom", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9785,7 +9785,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmtkcam_3rdparty.vidhance.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libmtkcam_imgbuf", "libmtkcam_metadata", "libmtkcam_metastore", "libmtkcam_stdutils", "libmtkcam_3rdparty.core", "libvidhance", "libmtkcam_pipeline", "libmtkcam_streamutils", "libui", "libnativewindow", "libhidlbase", "libhidltransport", "android.frameworks.sensorservice@1.0", "libmtkcam_modulehelper", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libutils", "libcutils", "libmtkcam_imgbuf", "libmtkcam_metadata", "libmtkcam_metastore", "libmtkcam_stdutils", "libmtkcam_3rdparty.core", "libvidhance", "libmtkcam_pipeline", "libmtkcam_streamutils", "libui-v34", "libnativewindow", "libhidlbase", "libhidltransport", "android.frameworks.sensorservice@1.0", "libmtkcam_modulehelper", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9972,7 +9972,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmtkcam_grallocutils.so"],
-			shared_libs: ["libgralloc_extra", "liblog", "libutils", "libsync", "libcutils", "libui", "libmtkcam_stdutils", "libmtkcam_ulog", "libhidlbase", "libhardware", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.common@1.2", "vendor.mediatek.hardware.gpu@1.0", "libgralloctypes", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libgralloc_extra", "liblog", "libutils", "libsync", "libcutils", "libui-v34", "libmtkcam_stdutils", "libmtkcam_ulog", "libhidlbase", "libhardware", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.common@1.2", "vendor.mediatek.hardware.gpu@1.0", "libgralloctypes", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
