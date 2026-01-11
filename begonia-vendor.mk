@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
@@ -146,7 +145,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/redmi/begonia/proprietary/vendor/firmware/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     vendor/redmi/begonia/proprietary/vendor/firmware/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg \
-    vendor/redmi/begonia/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/redmi/begonia/proprietary/vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/0102030405060708090a0b0c0d0e0f10.ta \
     vendor/redmi/begonia/proprietary/vendor/thh/ta/020b0000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/020b0000000000000000000000000000.ta \
     vendor/redmi/begonia/proprietary/vendor/thh/ta/020f0000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/020f0000000000000000000000000000.ta \
@@ -208,14 +206,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.thermal@2.0-impl \
     dfps.mt6785 \
-    displayfeature.default \
     nfc_nci.nqx.default \
     thermal.mt6785 \
     vendor.mediatek.hardware.dfps@1.0-impl \
     vendor.mediatek.hardware.mms@1.5-impl \
-    vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.6-impl \
-    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     libDefaultFpsActor \
     libFrameRecord \
     libJpgEncPipe \
@@ -226,7 +221,6 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_mtk \
     libaalservice \
-    libaedv \
     libbwc \
     libcapctrl \
     libcares_naptr \
@@ -291,8 +285,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.3 \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.nvram@1.0 \
-    vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.pq@2.0 \
     vendor.mediatek.hardware.pq@2.1 \
     vendor.mediatek.hardware.pq@2.2 \
@@ -305,8 +297,6 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
     audio.primary.mt6785 \
-    audio.r_submix.mt6785 \
-    audio.usb.mt6785 \
     sound_trigger.primary.mt6785 \
     vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
@@ -405,6 +395,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
+    vendor.mediatek.hardware.nvram@1.1-impl \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.af.core \
@@ -830,6 +821,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.nvram@1.0 \
+    vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.microtrust.hardware.soter@1.0 \
@@ -881,7 +874,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.microtrust.hardware.soter@1.0-service \
-    vendor.xiaomi.hardware.displayfeature@1.0-service \
     vtservice_hidl \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
