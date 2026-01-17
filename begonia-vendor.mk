@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/camera/visidon_clearshot_params_algoup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/visidon_clearshot_params_algoup.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/csot_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/csot_fhd_nt36672a_dsi_vdo_lcm_drv_mi.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
+    vendor/redmi/begonia/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/ebbg_fhd_ft8719_dsi_vdo_lcm_drv_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ebbg_fhd_ft8719_dsi_vdo_lcm_drv_mi.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
@@ -89,6 +90,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
+    vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
@@ -231,6 +233,8 @@ PRODUCT_PACKAGES += \
     libcurl-md \
     libcurl-ss \
     libcustom_nvram \
+    libdapparamstorage \
+    libdeccfg \
     libdpframework \
     libdre \
     libfile_op \
@@ -269,6 +273,9 @@ PRODUCT_PACKAGES += \
     libsimaka \
     libssl-md \
     libssl-ss \
+    libstagefright_soft_ac4dec \
+    libstagefright_soft_ddpdec \
+    libstagefrightdolby \
     libstrongswan \
     libsysenv \
     libthha \
@@ -277,6 +284,10 @@ PRODUCT_PACKAGES += \
     libvpu \
     libwo \
     nfc_nci.nqx.default.hw \
+    libswdap \
+    libswgamedap \
+    libswvqe \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.mediatek.hardware.dfps@1.0 \
     vendor.mediatek.hardware.gpu@1.0 \
     vendor.mediatek.hardware.mms@1.0 \
@@ -684,6 +695,7 @@ PRODUCT_PACKAGES += \
     libdip_drv \
     libdip_imem \
     libdip_postproc \
+    libdlbdsservice \
     libeffecthal.base \
     libfeature.face \
     libfeature.stereo.provider \
@@ -805,6 +817,7 @@ PRODUCT_PACKAGES += \
     s5kgw1ofilm_mipi_raw_tuning \
     s5kgw1sunny_mipi_raw_IdxMgr \
     s5kgw1sunny_mipi_raw_tuning \
+    vendor.dolby.hardware.dms@2.0-impl \
     vendor.mediatek.hardware.apuware.utils@1.0 \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.camera.atms@1.0 \
@@ -845,6 +858,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     fp_manifest.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_vendor.dolby.hardware.dms.xml \
     vtservice \
     batteryd \
     bp_kmsetkey_ca \
@@ -867,6 +881,7 @@ PRODUCT_PACKAGES += \
     camerahalserver \
     mfp-daemon \
     mtkfusionrild \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.mediatek.hardware.dfps@1.0-service \
     vendor.mediatek.hardware.gpu@1.0-service \
     vendor.mediatek.hardware.mms@1.5-service \
