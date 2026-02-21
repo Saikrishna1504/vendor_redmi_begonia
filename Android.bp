@@ -22063,6 +22063,7 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     strip: {
         none: true,
     },
