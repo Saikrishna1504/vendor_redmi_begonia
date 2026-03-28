@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.mfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
@@ -393,9 +392,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@1.0-impl-mediatek \
     consumerir.mt6785 \
-    fpc_fingerprint.default \
+    fingerprint.fpc.default \
+    fingerprint.goodix.default \
     gatekeeper.beanpod \
-    gf_fingerprint.default \
     gps.default \
     hwcomposer.mt6785 \
     kmsetkey.beanpod \
@@ -853,10 +852,8 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
-    fp_manifest.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.dolby.hardware.dms.xml \
     vtservice \
@@ -879,7 +876,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.1-service-mediatek \
     camerahalserver \
-    mfp-daemon \
     mtkfusionrild \
     vendor.dolby.hardware.dms@2.0-service \
     vendor.mediatek.hardware.dfps@1.0-service \
