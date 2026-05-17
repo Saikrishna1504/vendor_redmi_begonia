@@ -69,6 +69,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
+    vendor/redmi/begonia/proprietary/vendor/etc/init/init.mfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.thermalloadalgod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermalloadalgod.rc \
@@ -77,7 +78,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.volte_stack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_stack.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.volte_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_ua.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.wfca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wfca.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
@@ -191,13 +191,14 @@ PRODUCT_PACKAGES += \
     libimsma_socketwrapper \
     libmtk_vt_service \
     libmtk_vt_wrapper \
-    libmtkavenhancements \
     libsignal \
     libsink-mtk \
     libsource \
     libvcodec_cap \
     libvcodec_capenc \
     libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
     libGLES_meow \
@@ -309,7 +310,6 @@ PRODUCT_PACKAGES += \
     audio.primary.mt6785 \
     sound_trigger.primary.mt6785 \
     vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
-    vendor.mediatek.hardware.videotelephony@1.0-impl \
     libDR \
     libHEVCdec_sa.ca7.android \
     libMtkSpeechEnh \
@@ -377,7 +377,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.mtkcodecservice@1.1 \
-    vendor.mediatek.hardware.videotelephony@1.0-vendor \
     APUWareUtilsServer \
     APUWareXrpServer \
     gc2375af_mipi_raw_IdxMgr \
@@ -392,9 +391,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.sensors@1.0-impl-mediatek \
     consumerir.mt6785 \
-    fingerprint.fpc.default \
-    fingerprint.goodix.default \
+    fpc_fingerprint.default \
     gatekeeper.beanpod \
+    gf_fingerprint.default \
     gps.default \
     hwcomposer.mt6785 \
     kmsetkey.beanpod \
@@ -839,7 +838,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.power@2.0 \
     vendor.microtrust.hardware.soter@1.0 \
     wechat.beanpod \
-    vendor.mediatek.hardware.videotelephony@1.0 \
     EngineerMode \
     ImsService \
     SoterService \
@@ -852,8 +850,10 @@ PRODUCT_PACKAGES += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
+    android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
+    fp_manifest.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.dolby.hardware.dms.xml \
     vtservice \
@@ -876,6 +876,7 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.1-service-mediatek \
     camerahalserver \
+    mfp-daemon \
     mtkfusionrild \
     vendor.dolby.hardware.dms@2.0-service \
     vendor.mediatek.hardware.dfps@1.0-service \
@@ -885,7 +886,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.microtrust.hardware.soter@1.0-service \
-    vtservice_hidl \
     lib3a.ccu.ddr \
     lib3a.ccu.dm \
     lib3a.ccu.pm \

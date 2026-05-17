@@ -1,0 +1,32 @@
+
+service mfp-daemon /vendor/bin/hw/mfp-daemon
+    class late_start
+    user system
+    group system drmrpc diag input uhid
+    writepid /dev/cpuset/foreground/boost/tasks
+    seclabel u:r:hal_fingerprint_default:s0
+
+on boot
+    chown system system /sys/bus/platform/devices/fingerprint/clk_enable
+    chmod 0660 /sys/bus/platform/devices/fingerprint/clk_enable
+    chown system system /sys/bus/platform/devices/fingerprint/wakeup_enable
+    chmod 0660 /sys/bus/platform/devices/fingerprint/wakeup_enable
+    chown system system /sys/bus/platform/devices/fingerprint/irq
+    chmod 0660 /sys/bus/platform/devices/fingerprint/irq
+    chmod 0660 /sys/bus/spi/devices/spi0.0/authen_fd/performance
+    chown system system /sys/bus/spi/devices/spi0.0/authen_fd/performance
+
+on post-fs-data
+    mkdir /data/vendor/misc 01771 system system
+    mkdir /data/vendor/misc/mi_fp 0770 system system
+    mkdir /persist/mi_fp 0770 system system
+    mkdir /mnt/vendor/persist/mi_fp 0770 system system
+    mkdir /data/vendor/fpc 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    mkdir /data/vendor/goodix 0770 system system
+    mkdir /mnt/vendor/persist/goodix 0770 system system
+
+on property:vendor.fps_hal.restartimes=max
+    stop mfp-daemon
+
+

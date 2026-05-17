@@ -65,9 +65,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libcomutils.so",
+                "proprietary/system/lib64/libcomutils.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -84,7 +84,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -95,9 +95,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libimsma.so",
+                "proprietary/system/lib64/libimsma.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -123,7 +123,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -134,9 +134,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libimsma_adapt.so",
+                "proprietary/system/lib64/libimsma_adapt.so",
             ],
             shared_libs: [
                 "liblog",
@@ -147,7 +147,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -158,9 +158,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libimsma_rtp.so",
+                "proprietary/system/lib64/libimsma_rtp.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -181,7 +181,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -192,9 +192,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libimsma_socketwrapper.so",
+                "proprietary/system/lib64/libimsma_socketwrapper.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -212,7 +212,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -223,12 +223,11 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libmtk_vt_service.so",
+                "proprietary/system/lib64/libmtk_vt_service.so",
             ],
             shared_libs: [
-                "libgui_shim",
                 "libandroid_runtime",
                 "libbinder",
                 "libutils",
@@ -239,7 +238,9 @@ cc_prebuilt_library_shared {
                 "libmedia",
                 "libbase",
                 "libfmq",
+                "libbinder_ndk",
                 "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk",
                 "libhidlbase",
                 "libhidltransport",
                 "libimsma",
@@ -256,7 +257,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -267,9 +268,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libmtk_vt_wrapper.so",
+                "proprietary/system/lib64/libmtk_vt_wrapper.so",
             ],
             shared_libs: [
                 "libandroid_runtime",
@@ -278,7 +279,9 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libnativehelper",
                 "libfmq",
+                "libbinder_ndk",
                 "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk",
                 "libhidlbase",
                 "libhidltransport",
                 "libui",
@@ -293,44 +296,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkavenhancements",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system/lib/libmtkavenhancements.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libstagefright",
-                "libstagefright_foundation",
-                "libcrypto",
-                "libmedia",
-                "libbinder",
-                "libnativewindow",
-                "android.hidl.memory@1.0",
-                "libmedia_omx",
-                "libdatasource",
-                "libstagefright_omx",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -341,9 +307,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libsignal.so",
+                "proprietary/system/lib64/libsignal.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -357,7 +323,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -368,12 +334,11 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libsink-mtk.so",
+                "proprietary/system/lib64/libsink-mtk.so",
             ],
             shared_libs: [
-                "libshim_vtservice",
                 "libbinder",
                 "libcutils",
                 "libgui",
@@ -395,7 +360,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -406,9 +371,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libsource.so",
+                "proprietary/system/lib64/libsource.so",
             ],
             shared_libs: [
                 "libui_shim",
@@ -434,7 +399,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -445,9 +410,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libvcodec_cap.so",
+                "proprietary/system/lib64/libvcodec_cap.so",
             ],
             shared_libs: [
                 "libui",
@@ -468,7 +433,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -479,9 +444,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libvcodec_capenc.so",
+                "proprietary/system/lib64/libvcodec_capenc.so",
             ],
             shared_libs: [
                 "liblog",
@@ -493,7 +458,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -504,9 +469,9 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
-                "proprietary/system/lib/libvt_avsync.so",
+                "proprietary/system/lib64/libvt_avsync.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -520,7 +485,60 @@ cc_prebuilt_library_shared {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.videotelephony-V1-ndk",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.videotelephony@1.0",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.mediatek.hardware.videotelephony@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
 }
 
@@ -5476,38 +5494,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0-vendor",
-                "libc",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libDR",
     owner: "redmi",
     strip: {
@@ -7386,35 +7372,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0-vendor",
-    stem: "vendor.mediatek.hardware.videotelephony@1.0",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "APUWareUtilsServer",
     owner: "redmi",
     strip: {
@@ -7838,7 +7795,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.fpc.default",
+    name: "fpc_fingerprint.default",
     owner: "redmi",
     strip: {
         none: true,
@@ -7846,7 +7803,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/hw/fingerprint.fpc.default.so",
+                "proprietary/vendor/lib64/hw/fpc_fingerprint.default.so",
             ],
             shared_libs: [
                 "liblog",
@@ -7855,37 +7812,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "android.hardware.biometrics.fingerprint@2.1",
                 "com.fingerprints.extension@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "fingerprint.goodix.default",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/fingerprint.goodix.default.so",
-            ],
-            shared_libs: [
-                "libgf_hal",
-                "liblog",
-                "libbinder",
-                "libhardware",
-                "libutils",
-                "libgoodixhwfingerprint",
                 "libc++",
                 "libc",
                 "libm",
@@ -7915,6 +7841,37 @@ cc_prebuilt_library_shared {
                 "libimsg_log",
                 "liblog",
                 "libhardware",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "gf_fingerprint.default",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/gf_fingerprint.default.so",
+            ],
+            shared_libs: [
+                "libgf_hal",
+                "liblog",
+                "libbinder",
+                "libhardware",
+                "libutils",
+                "libgoodixhwfingerprint",
                 "libc++",
                 "libc",
                 "libm",
@@ -20512,34 +20469,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    system_ext_specific: true,
-}
-
 android_app_import {
     name: "EngineerMode",
     owner: "redmi",
@@ -20646,6 +20575,15 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.biometrics.fingerprint@2.1-service.xml",
+    owner: "redmi",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "android.hardware.gpu@1.0-service.xml",
     owner: "redmi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml",
@@ -20658,6 +20596,15 @@ prebuilt_etc_xml {
     name: "android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml",
     owner: "redmi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "fp_manifest.xml",
+    owner: "redmi",
+    src: "proprietary/vendor/etc/vintf/manifest/fp_manifest.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -20685,7 +20632,7 @@ cc_prebuilt_binary {
     name: "vtservice",
     owner: "redmi",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/system/bin/vtservice",
             ],
@@ -20702,7 +20649,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -21332,6 +21279,39 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "mfp-daemon",
+    owner: "redmi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/mfp-daemon",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "android.hardware.biometrics.fingerprint@2.1",
+                "vendor.xiaomi.hardware.fingerprintextension@1.0",
+                "libvndksupport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "mtkfusionrild",
     owner: "redmi",
     target: {
@@ -21624,41 +21604,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vtservice_hidl",
-    owner: "redmi",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vtservice_hidl",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libbase",
-                "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0-vendor",
-                "libhardware",
-                "libhwbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
     strip: {
         none: true,
     },
