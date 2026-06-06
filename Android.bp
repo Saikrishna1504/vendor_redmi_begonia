@@ -25,7 +25,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libandroid_runtime",
-                "libcutils",
                 "liblog",
                 "libutils",
                 "libgui",
@@ -40,9 +39,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system/lib64/libem_support_jni.so",
             ],
             shared_libs: [
-                "libjni_shim",
                 "libandroid_runtime",
-                "libcutils",
                 "liblog",
                 "libutils",
                 "libgui",
@@ -54,7 +51,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
 }
 
