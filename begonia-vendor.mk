@@ -56,6 +56,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc \
+    vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.sensors@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service-mediatek.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
@@ -93,7 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
-    vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/redmi/begonia/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
@@ -104,6 +104,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/begonia/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/redmi/begonia/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
+    vendor/redmi/begonia/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/redmi/begonia/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/redmi/begonia/proprietary/vendor/etc/spn-conf-op09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spn-conf-op09.xml \
@@ -199,6 +200,8 @@ PRODUCT_PACKAGES += \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
+    AVCSecureVdecCA \
+    VP9SecureVdecCA \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
     libGLES_meow \
@@ -247,6 +250,7 @@ PRODUCT_PACKAGES += \
     libgz_gp_client \
     libgz_uree \
     libhdrvideo \
+    libhevce_sb.ca7.android \
     libhwm \
     libhydra \
     libimsg_log \
@@ -280,6 +284,7 @@ PRODUCT_PACKAGES += \
     libsysenv \
     libthha \
     libudf \
+    libvcodec_oal \
     libverno \
     libvpu \
     libwo \
@@ -305,11 +310,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.6 \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
     vendor.xiaomi.hardware.citsensorservice@1.1 \
-    AVCSecureVdecCA \
-    VP9SecureVdecCA \
     audio.primary.mt6785 \
     sound_trigger.primary.mt6785 \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
     libDR \
     libHEVCdec_sa.ca7.android \
     libMtkSpeechEnh \
@@ -338,10 +340,13 @@ PRODUCT_PACKAGES += \
     libfvaudio \
     libh264dec_customize \
     libh264dec_sa.ca7 \
+    libh264dec_sd.ca7 \
+    libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
     libipsec_ims_shr \
     libmnl \
     libmp4enc_sa.ca7 \
+    libmp4enc_xa.ca7 \
     libmsbc_mtk \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
@@ -355,7 +360,6 @@ PRODUCT_PACKAGES += \
     libthermalalgo \
     libtlcWidevineModularDrm \
     libvc1dec_sa.ca7 \
-    libvcodec_oal \
     libvcodec_utility \
     libvcodecdrv \
     libviagpsrpc \
@@ -376,7 +380,6 @@ PRODUCT_PACKAGES += \
     libwvdrmengine \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.mtkcodecservice@1.1 \
     APUWareUtilsServer \
     APUWareXrpServer \
     gc2375af_mipi_raw_IdxMgr \
@@ -690,6 +693,17 @@ PRODUCT_PACKAGES += \
     libchromanr \
     libcmdl \
     libcmdl_ndk.mtk \
+    libcodec2_hidl@1.0-v31 \
+    libcodec2_hidl@1.1-v31 \
+    libcodec2_hidl@1.2-v31 \
+    libcodec2_hidl_plugin-v31 \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_soft_common-v31 \
+    libcodec2_vndk-v31 \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
     libdip_drv \
     libdip_imem \
     libdip_postproc \
@@ -704,6 +718,7 @@ PRODUCT_PACKAGES += \
     libfeature_lmv \
     libfeature_rss \
     libforkexecwrap \
+    libformatter_mtk \
     libgf_ca \
     libgf_hal \
     libgoodixhwfingerprint \
@@ -791,7 +806,10 @@ PRODUCT_PACKAGES += \
     libratconfig \
     librilfusion \
     libsensor_custom \
+    libsfplugin_ccodec_utils-v31 \
+    libstagefright_bufferqueue_helper-v33 \
     libstereoinfoaccessor_vsdof \
+    libvcodecdrv_header_stub \
     libvia-ril \
     libvidhance \
     libwifi-hal-mtk \
@@ -855,6 +873,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     fp_manifest.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_media_c2_V1_2_default.xml \
     manifest_vendor.dolby.hardware.dms.xml \
     vtservice \
     batteryd \
@@ -871,6 +890,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.0-service.beanpod \
+    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.sensors@1.0-service-mediatek \
     android.hardware.thermal@2.0-service.mtk \
@@ -882,7 +902,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.dfps@1.0-service \
     vendor.mediatek.hardware.gpu@1.0-service \
     vendor.mediatek.hardware.mms@1.5-service \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.microtrust.hardware.soter@1.0-service \
@@ -929,5 +948,6 @@ PRODUCT_PACKAGES += \
     xcap
 
 PRODUCT_PACKAGES += \
+    vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
     vendor_lib_hw_vulkan_mt6785_so \
     vendor_lib64_hw_vulkan_mt6785_so

@@ -539,6 +539,102 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "AVCSecureVdecCA",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/AVCSecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/AVCSecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "VP9SecureVdecCA",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/VP9SecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/VP9SecureVdecCA.so",
+            ],
+            shared_libs: [
+                "libTEECommon",
+                "liblog",
+                "libion",
+                "libion_mtk",
+                "libcutils",
+                "libutils",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "arm.graphics-V1-ndk_platform",
     owner: "redmi",
     strip: {
@@ -2800,6 +2896,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhevce_sb.ca7.android",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libhevce_sb.ca7.android.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libvcodec_oal",
+                "libc",
+                "libm",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libhevce_sb.ca7.android.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libvcodec_oal",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libhwm",
     owner: "redmi",
     strip: {
@@ -4137,6 +4272,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvcodec_oal",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libvcodec_oal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libmtk_drvb",
+                "libmtkperf_client_vendor",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvcodec_oal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libverno",
     owner: "redmi",
     strip: {
@@ -5307,66 +5482,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "AVCSecureVdecCA",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/AVCSecureVdecCA.so",
-            ],
-            shared_libs: [
-                "libTEECommon",
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "VP9SecureVdecCA",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/VP9SecureVdecCA.so",
-            ],
-            shared_libs: [
-                "libTEECommon",
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "audio.primary.mt6785",
     owner: "redmi",
     strip: {
@@ -5440,42 +5555,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkcodecservice@1.1-impl",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhidlmemory",
-                "vendor.mediatek.hardware.mtkcodecservice@1.1",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libaudioutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -6276,6 +6355,66 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libh264dec_sd.ca7",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libh264dec_sd.ca7.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libvcodec_utility",
+                "libvcodec_oal",
+                "libh264dec_customize",
+                "liblog",
+                "libpowerhalwrap_vendor",
+                "libthha",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libh264dec_se.ca7",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libh264dec_se.ca7.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libvcodec_utility",
+                "libvcodec_oal",
+                "libh264dec_customize",
+                "liblog",
+                "libpowerhalwrap_vendor",
+                "libthha",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libh264enc_sa.ca7",
     owner: "redmi",
     strip: {
@@ -6291,7 +6430,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libvcodec_oal",
-                "libvcodec_utility",
                 "libc++",
                 "libdl",
                 "libc",
@@ -6368,6 +6506,34 @@ cc_prebuilt_library_shared {
         android_arm: {
             srcs: [
                 "proprietary/vendor/lib/libmp4enc_sa.ca7.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libvcodec_oal",
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    check_elf_files: false,
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmp4enc_xa.ca7",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmp4enc_xa.ca7.so",
             ],
             shared_libs: [
                 "libcutils",
@@ -6728,31 +6894,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libvcodec_oal",
                 "libvcodec_utility",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodec_oal",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvcodec_oal.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libdl",
                 "libc",
@@ -7322,35 +7463,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.common@5.0",
                 "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkcodecservice@1.1",
-    owner: "redmi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so",
-            ],
-            shared_libs: [
-                "android.hidl.memory@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -15615,6 +15727,440 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.0-v31",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.0-v31.so",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v33",
+                "libcodec2_hidl_plugin-v31",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.1-v31",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.1-v31.so",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-v31",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v33",
+                "libcodec2_hidl_plugin-v31",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl@1.2-v31",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl@1.2-v31.so",
+            ],
+            shared_libs: [
+                "libbase_shim",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "android.hardware.media.omx@1.0",
+                "libbase",
+                "libcodec2",
+                "libcodec2_hidl@1.0-v31",
+                "libcodec2_hidl@1.1-v31",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libstagefright_bufferqueue_helper-v33",
+                "libcodec2_hidl_plugin-v31",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl_plugin-v31",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl_plugin-v31.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_c2store",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v31",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libion",
+                "libion_mtk",
+                "libdmabufheap",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_vdec",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
+            ],
+            shared_libs: [
+                "libformatter_mtk",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui-v34",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libcodec2_soft_common-v31",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libcodec2_vpp_qt_plugin",
+                "libcodec2_vpp_rs_plugin",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_mtk_venc",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
+            ],
+            shared_libs: [
+                "libformatter_mtk",
+                "libdpframework",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libui-v34",
+                "libgralloc_extra",
+                "libexpat",
+                "libsync",
+                "libhidlbase",
+                "libhwbinder",
+                "libged",
+                "libcodec2_soft_common-v31",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation-v33",
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libion",
+                "libdmabufheap",
+                "libion_mtk",
+                "libcodec2_mtk_c2store",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_common-v31",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_soft_common-v31.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation-v33",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vndk-v31",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vndk-v31.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.media.bufferpool@2.0",
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libion",
+                "libdmabufheap",
+                "libfmq",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation-v33",
+                "libstagefright_bufferpool@2.0.1",
+                "libui-v34",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_qt_plugin",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v31",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation-v33",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vpp_rs_plugin",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
+            ],
+            shared_libs: [
+                "libcodec2_soft_common-v31",
+                "libsfplugin_ccodec_utils-v31",
+                "libstagefright_foundation-v33",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdip_drv",
     owner: "redmi",
     strip: {
@@ -16077,6 +16623,38 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libformatter_mtk",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libformatter_mtk.so",
+            ],
+            shared_libs: [
+                "libion_mtk",
+                "libdmabufheap",
+                "libutils",
+                "libion",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libutilscallstack",
                 "libc++",
                 "libc",
                 "libm",
@@ -18996,6 +19574,73 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsfplugin_ccodec_utils-v31",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsfplugin_ccodec_utils-v31.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk-v31",
+                "libcutils",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libstagefright_bufferqueue_helper-v33",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-v33.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "libhidlmemory",
+                "liblog",
+                "libstagefright_foundation",
+                "libui",
+                "libutils",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libgui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libstereoinfoaccessor_vsdof",
     owner: "redmi",
     strip: {
@@ -19013,6 +19658,31 @@ cc_prebuilt_library_shared {
                 "libexpat",
                 "libz",
                 "libpng",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvcodecdrv_header_stub",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvcodecdrv_header_stub.so",
+            ],
+            shared_libs: [
+                "libion",
                 "libc++",
                 "libc",
                 "libm",
@@ -20616,6 +21286,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_media_c2_V1_2_default.xml",
+    owner: "redmi",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_vendor.dolby.hardware.dms.xml",
     owner: "redmi",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml",
@@ -21079,6 +21758,48 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "android.hardware.media.c2@1.2-mediatek-64b",
+    owner: "redmi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libutils",
+                "android.hardware.media.c2@1.0",
+                "android.hardware.media.c2@1.1",
+                "android.hardware.media.c2@1.2",
+                "libcodec2_hidl@1.0-v31",
+                "libcodec2_hidl@1.1-v31",
+                "libcodec2_hidl@1.2-v31",
+                "libcodec2_vndk-v31",
+                "libhidlbase",
+                "libavservices_minijail",
+                "libbinder",
+                "libcodec2_mtk_c2store",
+                "libcodec2_mtk_vdec",
+                "libcodec2_mtk_venc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.neuralnetworks@1.3-service-mtk-neuron",
     owner: "redmi",
     target: {
@@ -21466,37 +22187,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.mediatek.hardware.mtkcodecservice@1.1-service",
-    owner: "redmi",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "vendor.mediatek.hardware.mtkcodecservice@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
     strip: {
         none: true,
     },
@@ -22412,6 +23102,13 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+install_symlink {
+    name: "vendor_bin_hw_android_hardware_media_c2@1_2-mediatek",
+    soc_specific: true,
+    installed_location: "bin/hw/android.hardware.media.c2@1.2-mediatek",
+    symlink_target: "/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
 }
 
 install_symlink {
