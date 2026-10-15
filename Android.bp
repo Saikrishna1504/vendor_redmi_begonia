@@ -55,6 +55,147 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcamera_algoup_jni.xiaomi",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_chroma_nr.xiaomi",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_chroma_nr.xiaomi.so",
+            ],
+            shared_libs: [
+                "libandroid",
+                "libandroid_runtime",
+                "libcutils",
+                "libgui",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libmedia_jni",
+                "libnativehelper",
+                "libnativewindow",
+                "libsync",
+                "libui",
+                "libutils",
+                "android.hidl.token@1.0-utils",
+                "vendor.mediatek.hardware.camera.postproc@1.0",
+                "libmedia_jni_utils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_imagecodec_jni.xiaomi",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_imagecodec_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libui_shim",
+                "libion",
+                "libmedia",
+                "libcamera_client",
+                "libandroid_runtime",
+                "libnativehelper",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libgui",
+                "libui",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "vendor.mediatek.hardware.mms@1.0",
+                "vendor.mediatek.hardware.mms@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_mianode_jni.xiaomi",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcomutils",
     owner: "redmi",
     strip: {
@@ -474,6 +615,88 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.camera.postproc@1.0",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mms@1.0",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.mediatek.hardware.mms@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mms@1.1",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/vendor.mediatek.hardware.mms@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.mediatek.hardware.mms@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -1295,8 +1518,8 @@ cc_prebuilt_library_shared {
                 "libdpframework",
                 "libgralloc_extra",
                 "libsync",
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "vendor.mediatek.hardware.mms@1.3",
                 "vendor.mediatek.hardware.mms@1.4",
@@ -1325,8 +1548,8 @@ cc_prebuilt_library_shared {
                 "libdpframework",
                 "libgralloc_extra",
                 "libsync",
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "vendor.mediatek.hardware.mms@1.3",
                 "vendor.mediatek.hardware.mms@1.4",
@@ -4763,7 +4986,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mms@1.0",
+    name: "vendor.mediatek.hardware.mms@1.0-vendor",
+    stem: "vendor.mediatek.hardware.mms@1.0",
     owner: "redmi",
     strip: {
         none: true,
@@ -4806,7 +5030,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mms@1.1",
+    name: "vendor.mediatek.hardware.mms@1.1-vendor",
+    stem: "vendor.mediatek.hardware.mms@1.1",
     owner: "redmi",
     strip: {
         none: true,
@@ -4817,7 +5042,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.1.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -4833,7 +5058,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.1.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -4862,8 +5087,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.2.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -4879,8 +5104,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.2.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -4909,8 +5134,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.3.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "libhidlbase",
                 "liblog",
@@ -4927,8 +5152,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.3.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "libhidlbase",
                 "liblog",
@@ -4958,8 +5183,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.4.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "vendor.mediatek.hardware.mms@1.3",
                 "libhidlbase",
@@ -4977,8 +5202,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.4.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "vendor.mediatek.hardware.mms@1.3",
                 "libhidlbase",
@@ -5009,8 +5234,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.5.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "vendor.mediatek.hardware.mms@1.3",
                 "vendor.mediatek.hardware.mms@1.4",
@@ -5029,8 +5254,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.5.so",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mms@1.0",
-                "vendor.mediatek.hardware.mms@1.1",
+                "vendor.mediatek.hardware.mms@1.0-vendor",
+                "vendor.mediatek.hardware.mms@1.1-vendor",
                 "vendor.mediatek.hardware.mms@1.2",
                 "vendor.mediatek.hardware.mms@1.3",
                 "vendor.mediatek.hardware.mms@1.4",
@@ -8331,7 +8556,7 @@ cc_prebuilt_library_shared {
                 "libcamera_metadata",
                 "libhidlbase",
                 "libhidltransport",
-                "vendor.mediatek.hardware.camera.postproc@1.0",
+                "vendor.mediatek.hardware.camera.postproc@1.0-vendor",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.common@1.0",
                 "android.hardware.graphics.common@1.1",
@@ -20725,7 +20950,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.camera.postproc@1.0",
+    name: "vendor.mediatek.hardware.camera.postproc@1.0-vendor",
+    stem: "vendor.mediatek.hardware.camera.postproc@1.0",
     owner: "redmi",
     strip: {
         none: true,
@@ -21158,6 +21384,23 @@ android_app_import {
 }
 
 android_app_import {
+    name: "MiuiCamera",
+    owner: "redmi",
+    apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
+    overrides: [
+        "Aperture",
+        "Camera2",
+        "Snap",
+        "SnapdragonCamera",
+    ],
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
     name: "SoterService",
     owner: "redmi",
     apk: "proprietary/vendor/app/SoterService/SoterService.apk",
@@ -21166,6 +21409,14 @@ android_app_import {
         enabled: false,
     },
     soc_specific: true,
+}
+
+dex_import {
+    name: "cloud-common",
+    owner: "redmi",
+    jars: [
+        "proprietary/system/framework/cloud-common.jar",
+    ],
 }
 
 dex_import {
@@ -21975,7 +22226,7 @@ cc_prebuilt_binary {
                 "vendor.mediatek.hardware.camera.ccap@1.0",
                 "vendor.mediatek.hardware.camera.security@1.0",
                 "vendor.mediatek.hardware.camera.frhandler@1.0",
-                "vendor.mediatek.hardware.camera.postproc@1.0",
+                "vendor.mediatek.hardware.camera.postproc@1.0-vendor",
                 "vendor.mediatek.hardware.camera.bgservice@1.0",
                 "vendor.mediatek.hardware.camera.bgservice@1.1",
                 "vendor.mediatek.hardware.camera.atms@1.0",
