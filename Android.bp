@@ -369,6 +369,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system/lib64/libmtk_vt_service.so",
             ],
             shared_libs: [
+                "libshim_vtservice",
                 "libgui_shim",
                 "libandroid_runtime",
                 "libbinder",
@@ -518,6 +519,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system/lib64/libsource.so",
             ],
             shared_libs: [
+                "libshim_vtservice",
                 "libui_shim",
                 "libbinder",
                 "libcutils",
@@ -1636,6 +1638,56 @@ cc_prebuilt_library_shared {
                 "libaalservice",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libfmq",
+                "vendor.mediatek.hardware.videotelephony@1.0-vendor",
+                "libc",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libfmq",
+                "vendor.mediatek.hardware.videotelephony@1.0-vendor",
+                "libc",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -5767,6 +5819,50 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.pq@2.3",
                 "vendor.mediatek.hardware.pq@2.4",
                 "vendor.mediatek.hardware.pq@2.5",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.videotelephony@1.0-vendor",
+    stem: "vendor.mediatek.hardware.videotelephony@1.0",
+    owner: "redmi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so",
+            ],
+            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -22680,6 +22776,41 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vtservice_hidl",
+    owner: "redmi",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vtservice_hidl",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libfmq",
+                "vendor.mediatek.hardware.videotelephony@1.0-vendor",
+                "libhardware",
+                "libhwbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
     strip: {
         none: true,
     },

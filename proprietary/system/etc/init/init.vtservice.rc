@@ -1,6 +1,6 @@
 # VTService .rc configure
 
-service vtservice /system_ext/bin/vtservice
+service vtservice /system/bin/vtservice
     class main
     user system
     group system camera graphics inet net_admin net_raw media sdcard_rw radio sdcard_r media_rw
