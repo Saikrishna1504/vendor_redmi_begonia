@@ -17460,6 +17460,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmialgoengine.so",
             ],
             shared_libs: [
+                "libshim_camera",
                 "liblog",
                 "libutils",
                 "libcutils",
