@@ -23514,33 +23514,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "wlan_assistant",
-    owner: "redmi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wlan_assistant",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libcutils",
-                "libnl",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "wmt_launcher",
     owner: "redmi",
     target: {
